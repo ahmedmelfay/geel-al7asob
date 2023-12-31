@@ -1,0 +1,27 @@
+.menu-bar-icon {
+  cursor: pointer;
+}
+.mobile-menu-area {
+  position: absolute;
+  width: 60%;
+  background:#FFFFFF;
+  z-index: 100;
+  left:0;
+}
+@media all and (min-width: 992px) {
+  .main-menu-desktop-mode {
+    display: block;
+  }
+  .main-menu-mobile-mode {
+    display: none;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .main-menu-desktop-mode {
+    display: none;
+  }
+  .main-menu-mobile-mode {
+    display: block;
+  }
+}

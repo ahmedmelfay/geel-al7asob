@@ -1,0 +1,21 @@
+.wt-tabs.bg-tabs .nav-tabs > li.react-tabs__tab--selected
+{
+	  border: 1px solid #ddd;
+	  color: #d72323;
+	  border-radius:0px 0px 0 0!important;
+}
+.wt-tabs.bg-tabs .nav-tabs > li.react-tabs__tab
+{
+	 border: 1px solid #ddd;
+	 line-height: 1.5;
+	 padding: 15px;
+	 font-weight: 800;
+	 font-size: 16px;
+	  border-radius:0px 0px 0 0!important;
+}
+.react-tabs__tab-panel
+{
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: -1px;
+}

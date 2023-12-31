@@ -1,0 +1,30 @@
+.Dropdown-option.is-selected
+{
+	text-align: left;
+	color: #999;
+	font-weight: 400;
+	font-size: 13px;
+	white-space: nowrap;
+color: #fff!important;
+  text-decoration: none!important;
+  background-color: #1a1a1a!important;	
+
+}
+
+.Dropdown-menu
+{
+	text-align: left;
+	color: #999;
+	font-weight: 400;
+	font-size: 13px;
+	white-space: nowrap;
+	max-height:250px!important;
+}
+.myPlaceholderClassName 
+{
+	text-align: left;
+	color: #999;
+	font-weight: 400;
+	font-size: 13px;
+	white-space: nowrap;
+}
