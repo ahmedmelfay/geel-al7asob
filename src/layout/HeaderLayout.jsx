@@ -1,97 +1,80 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import logo_white from '../assets/images/logo-white.png';
-import logo_red from '../assets/images/logo-bg-dark.png';
-import logo_black from '../assets/images/logo-dark.png';
+import React, { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import logo_white from "../assets/images/logo-white.png";
+import logo_red from "../assets/images/logo-bg-dark.png";
+import logo_black from "../assets/images/logo-dark.png";
 
-import Navigation from '../pages/navigation/Navigation';
+import Navigation from "../pages/navigation/Navigation";
 import MobileMenu from "../pages/navigation/MobileMenu";
 import "../pages/navigation/Navbar.css";
-import SearchForm from '../common/search_form/SearchForm';
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const helmetContext = {};
 
 const HeaderLayout = () => {
-			
-			const navRef = React.useRef(null);
-			const [stateSearch, setStateSearch] = React.useState(true);
-			  const onAddClick = (e) => {
-				if(stateSearch)
-				{
-					navRef.current.classList.add("close");
-					setStateSearch(false);
-				}else
-				{
-					navRef.current.classList.remove("close");
-					setStateSearch(true);
-				}
-			  };
+  var [state, setState] = useState(false);
+  var location = useLocation();
+  const [enableMobileMenu, setEnableMenu] = useState(false);
+  useEffect(() => {
+    var loc = titleCase(location.pathname.replace("/", "")).trim();
 
-	
-			var [state, setState] = useState(false);
-			var location = useLocation();  
-			const [enableMobileMenu, setEnableMenu] = useState(false);
-			 useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
 
-			  	 var loc= titleCase(location.pathname.replace( "/",'')).trim();	
-			 	
-				const handleScroll = () => {
-				const offset = window.scrollY;
-				
-				const stickyheader = document.querySelector('.sticky-header ');
-				
-				if (offset >= 300) {
-					stickyheader.classList.add('is-fixed');
-					stickyheader.classList.add('color-fill');
-				
-				} else {
-					stickyheader.classList.remove('is-fixed');
-					stickyheader.classList.remove('color-fill');
-				}
-				}
-				
-				window.addEventListener('scroll', handleScroll);
-				
-				window.updateTopMostParent = (logopath) => {
-				this.setState({ logo: logopath }); 
-				};
-				
-				(loc==='Home3')?setState(true):setState(false);
-				
-				 window.scrollTo(0, 0);
-				
-			 }, [location]);
-			
-			
-			 
-			function titleCase(str) 
-			{
-			  str = str.toLowerCase().split(' ');
-			  for (var i = 0; i < str.length; i++) {
-				str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-			  }
-			  return str.join(' ');
-			}	  
-			function MyImage() 
-			{
-			  var imgRef = useRef(logo_white);
-		      var location = useLocation();  
-			  var loc= titleCase(location.pathname.replace( "/",'')).trim();	
-			  loc = (loc==='')?loc='Home':loc;	
-			  imgRef.imgLogo = (loc==='')?logo_white:(loc==='Home2')?logo_red:(loc==='Home3')?logo_black:logo_white;
-			  useEffect((props) => {			
-				document.title = 'Dronza Templete | '+loc+' Style';					
-			  });			
-			  return <img src={imgRef.imgLogo} alt="Dronza" />;
-			}	
-			
-return(	 
-	<>   
-	<HelmetProvider context={helmetContext}>
-		  <Helmet>
-				{`
+      const stickyheader = document.querySelector(".sticky-header ");
+
+      if (offset >= 300) {
+        stickyheader.classList.add("is-fixed");
+        stickyheader.classList.add("color-fill");
+      } else {
+        stickyheader.classList.remove("is-fixed");
+        stickyheader.classList.remove("color-fill");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    window.updateTopMostParent = (logopath) => {
+      this.setState({ logo: logopath });
+    };
+
+    loc === "Home3" ? setState(true) : setState(false);
+
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  function titleCase(str) {
+    str = str.toLowerCase().split(" ");
+    for (var i = 0; i < str.length; i++) {
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(" ");
+  }
+  function MyImage() {
+    var imgRef = useRef(logo_white);
+    var location = useLocation();
+    var loc = titleCase(location.pathname.replace("/", "")).trim();
+    loc = loc === "" ? (loc = "Home") : loc;
+    imgRef.imgLogo =
+      loc === ""
+        ? logo_white
+        : loc === "Home2"
+        ? logo_red
+        : loc === "Home3"
+        ? logo_black
+        : logo_white;
+    useEffect((props) => {
+      document.title = "Dronza Templete | " + loc + " Style";
+    });
+    return <img src={imgRef.imgLogo} alt="Dronza" />;
+  }
+
+  return (
+    <>
+      <HelmetProvider context={helmetContext}>
+        <Helmet>
+          {`
 				<script  src="./assets/js/jquery-2.2.0.min.js"></script>
 	
 			
@@ -114,73 +97,65 @@ return(
 				<script src="./assets/js/jquery-ui.js"></script>
 				<script  src="./assets/js/switcher.js"></script>
 				`}
-		 </Helmet>
-	</HelmetProvider>	
-	  {/* <!-- HEADER START --> */}
-      <header className={`site-header  header-style-4 mobile-sider-drawer-menu  ${enableMobileMenu ? " active " : ""} ${state ? " dark-menu " : ""}`} >                       
-           <div className="sticky-header main-bar-wraper  navbar-expand-lg">
-                <div className="main-bar">                       
-                       <div className="container clearfix"> 
-					   
-                       		{/*<!-- SITE logo -->*/}
-                            <div className="logo-header">
-                                <div className="logo-header-inner logo-header-one">                                    
-									<Link to="/">
-										<MyImage />										                                    	
-                                    </Link>
-                                </div>
-                            </div>  
-							
-							{/*<!-- NAV Toggle Button -->*/}
-                            <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" className="navbar-toggler collapsed" onClick={() => setEnableMenu(!enableMobileMenu)}>
-                                <span className="sr-only">Toggle navigation</span>
-                                <span className="icon-bar icon-bar-first"></span>
-                                <span className="icon-bar icon-bar-two"></span>
-                                <span className="icon-bar icon-bar-three"></span>
-                            </button> 
-							
-							
-							 <div className="extra-nav header-2-nav">
-                                <div className="extra-cell">
-                                    <div className="header-search">                                       
-										<Link className="header-search-icon" ref={navRef} to="" onClick={onAddClick}><i className="fa fa-search"></i></Link>
-                                    </div>                                
-                                </div>
-                                <div className="extra-cell">
-                                    <div className="header-nav-request">
-                                        (+291) 912-3456-073 
-                                    </div>
-                                </div>                                
-                                 
-                             </div> 
-                            
-                            {/*<!-- SITE Navigation -->*/}
-							
-							 <div className="main-menu-desktop-mode">
-								 <Navigation />	
-							 </div>
-							  <div className="main-menu-mobile-mode">
-								 <div className="mobile-menu-area">
-									  {enableMobileMenu && <MobileMenu />}
-								 </div>
-							  </div>
-							  
-							  
-							  
-													
-                        </div>    
-						 {/*<!-- SITE Search -->*/}							
-                            <div id="search-toggle-block" style={{display: stateSearch ? 'none' : 'block' }}>
-                                <div id="search"> 
-									<SearchForm role="search" name="searchForm" id="searchform" className="radius-xl" />									
-                                </div>
-                            </div>  
-                </div>                    
-            </div>            
-        </header> 
-		{/* <!-- HEADER END --> */}		
+        </Helmet>
+      </HelmetProvider>
+      {/* <!-- HEADER START --> */}
+      <header
+        className={`site-header  header-style-4 mobile-sider-drawer-menu  ${
+          enableMobileMenu ? " active " : ""
+        } ${state ? " dark-menu " : ""}`}
+      >
+        <div className="sticky-header main-bar-wraper  navbar-expand-lg">
+          <div className="main-bar">
+            <div className="container clearfix">
+              {/*<!-- SITE logo -->*/}
+              <div className="logo-header">
+                <div className="logo-header-inner logo-header-one">
+                  <Link to="/">
+                    <MyImage />
+                  </Link>
+                </div>
+              </div>
 
-	</>
- )
-}
+              {/*<!-- NAV Toggle Button -->*/}
+              <button
+                id="mobile-side-drawer"
+                data-target=".header-nav"
+                data-toggle="collapse"
+                type="button"
+                className="navbar-toggler collapsed"
+                onClick={() => setEnableMenu(!enableMobileMenu)}
+              >
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar icon-bar-first"></span>
+                <span className="icon-bar icon-bar-two"></span>
+                <span className="icon-bar icon-bar-three"></span>
+              </button>
+
+              <div className="extra-nav header-2-nav">
+                <div className="extra-cell">
+                  <a className="header-nav-request" href="tel:+966503560334">
+                    (+966) 50-356-0334
+                  </a>
+                </div>
+              </div>
+
+              {/*<!-- SITE Navigation -->*/}
+
+              <div className="main-menu-desktop-mode">
+                <Navigation />
+              </div>
+              <div className="main-menu-mobile-mode">
+                <div className="mobile-menu-area">
+                  {enableMobileMenu && <MobileMenu />}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* <!-- HEADER END --> */}
+    </>
+  );
+};
 export default HeaderLayout;
