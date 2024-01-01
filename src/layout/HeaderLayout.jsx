@@ -111,7 +111,7 @@ const HeaderLayout = () => {
               {/*<!-- SITE logo -->*/}
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
-                  <Link to="/">
+                  <Link to="/" style={{ width: 100, display: "inline-block" }}>
                     <MyImage />
                   </Link>
                 </div>

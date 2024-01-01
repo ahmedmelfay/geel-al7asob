@@ -19,7 +19,8 @@ const HomePage1 = (props) => {
 		script.async = true;
 	
 		document.body.appendChild(script);
-	
+    document.title = "Hasoup | Home";
+
 		return () => {
 		  document.body.removeChild(script);
 		}

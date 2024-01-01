@@ -94,8 +94,8 @@ color: #fff;
  .slick-prev:hover, .slick-next:hover
  {
  
-  background-color: #d72323;
-  border-color: #d72323;
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
   color: #ffffff;
   opacity: 0.9;
   }

@@ -1,32 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import SimpleMap from "../../../common/map/SimpleMap";
 const PagesSectionContactUs = (props) => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { username, email, phone, subject, message } = e.target.elements;
+  // const [status, setStatus] = useState("Submit");
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus("Sending...");
+  //   const { username, email, phone, subject, message } = e.target.elements;
 
-    let details = {
-      username: username.value,
-      email: email.value,
-      phone: phone.value,
-      subject: subject.value,
-      message: message.value,
-    };
+  //   let details = {
+  //     username: username.value,
+  //     email: email.value,
+  //     phone: phone.value,
+  //     subject: subject.value,
+  //     message: message.value,
+  //   };
 
-    let response = await fetch(`${process.env.PUBLIC_URL}/form-handler2.php`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
+  //   let response = await fetch(`${process.env.PUBLIC_URL}/form-handler2.php`, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
 
-    setStatus(status);
-    let result = await response.json();
-    alert(result.status);
-  };
+  //   setStatus(status);
+  //   let result = await response.json();
+  //   alert(result.status);
+  // };
 
   return (
     <>
@@ -51,8 +51,8 @@ const PagesSectionContactUs = (props) => {
           <div className="container">
             <div className="contact-one">
               {/*<!-- CONTACT FORM--> */}
-              <div className="row  d-flex justify-content-center flex-wrap">
-                <div className="col-lg-6 col-md-6 m-b30">
+              <div className="row d-flex justify-content-center flex-wrap">
+                <div className="col-md-12 m-b30">
                   <div className="contact-info">
                     <div className="contact-info-inner">
                       {/*<!-- TITLE START--> */}
@@ -121,19 +121,16 @@ const PagesSectionContactUs = (props) => {
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-md-6 m-b30">
+                {/* <div className="col-lg-6 col-md-6 m-b30">
                   <form
                     className="cons-contact-form"
                     method="post"
                     onSubmit={handleSubmit}
                   >
-                    {" "}
-                    {/*onSubmit={handleSubmit}*/}
-                    {/*<!-- TITLE START --> */}
+                  
                     <div className="section-head left wt-small-separator-outer">
                       <h3>Get In Touch</h3>
                     </div>
-                    {/*<!-- TITLE END --> */}
                     <div className="row">
                       <div className="col-lg-12 col-md-12">
                         <div className="form-group">
@@ -204,7 +201,7 @@ const PagesSectionContactUs = (props) => {
                       </div>
                     </div>
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
