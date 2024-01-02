@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 const Navigation = () => {
+  const { t } = useTranslation();
+
   useEffect((props) => {
     function loadScript(src) {
       return new Promise(function (resolve, reject) {
@@ -26,25 +30,27 @@ const Navigation = () => {
       <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
         <ul className="nav navbar-nav">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("navigationMenu.home")}</Link>
           </li>
 
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about">{t("navigationMenu.aboutUs")}</Link>
           </li>
 
           <li>
-            <Link to="/contactus">Contact us</Link>
+            <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
           </li>
 
           <li>
-            <Link>Services</Link>
+            <Link>{t("navigationMenu.services")}</Link>
             <ul className="sub-menu">
               <li>
-                <Link to="/services1">Services one</Link>
+                <Link to="/computer-network-services">
+                  {t("computerNetworkServices.title")}
+                </Link>
               </li>
               <li>
-                <Link to="/services2">Services Two</Link>
+                <Link to="/services2">{t("service2.title")}</Link>
               </li>
               <li>
                 <Link to="/services-detail">Services detail</Link>
@@ -63,7 +69,6 @@ const Navigation = () => {
               </li>
             </ul>
           </li> 
- 
           {/* <li>
             <Link>Gallery</Link>
             <ul className="sub-menu">
