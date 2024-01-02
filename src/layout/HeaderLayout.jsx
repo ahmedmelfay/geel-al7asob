@@ -9,10 +9,13 @@ import MobileMenu from "../pages/navigation/MobileMenu";
 import "../pages/navigation/Navbar.css";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 const helmetContext = {};
 
 const HeaderLayout = () => {
+  const { t, i18n } = useTranslation();
+
   var [state, setState] = useState(false);
   var location = useLocation();
   const [enableMobileMenu, setEnableMenu] = useState(false);
@@ -133,6 +136,17 @@ const HeaderLayout = () => {
               </button>
 
               <div className="extra-nav header-2-nav">
+                <div className="extra-cell">
+                  <button
+                    className="header-nav-request"
+                    style={{ background: "none", border: "none" }}
+                    onClick={() =>
+                      i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar")
+                    }
+                  >
+                    {t("navigationMenu.language")}
+                  </button>
+                </div>
                 <div className="extra-cell">
                   <a className="header-nav-request" href="tel:+966503560334">
                     (+966) 50-356-0334

@@ -1,0 +1,69 @@
+{
+  "navigationMenu": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "services": "Services",
+    "language": "ع"
+  },
+  "readMore": "Read More",
+  "contactUs": {
+    "title": "Contact Us",
+    "description": "Feel free to get in touch!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send us a message"
+    }
+  },
+  "computerNetworkServices": {
+    "title": "Wired & Wireless Computer Network Services",
+    "allServiceSection": {
+      "theBest": "The Best Computer Networking Services",
+      "explore": "Explore Our Main Services",
+      "networkDesign": {
+        "title": "Network Design",
+        "description": "Whether you require a wired or wireless network, our dedicated team has the expertise to analyze your needs and design a dedicated network that meets your exact requirements."
+      },
+      "networkInstallationConfiguration": {
+        "title": "Network Installation & Configuration",
+        "description": "With our installation and configuration experience, we will connect cables and install routers, switches and other devices correctly."
+      },
+      "securityProtection": {
+        "title": "Security & Protection",
+        "description": "We understand the importance of security in networks, so we will implement appropriate security measures to protect your sensitive data and information."
+      }
+    },
+    "mainServiceSection": {
+      "all": "All Services",
+      "explore": "Explore Our Main Services",
+      "description": "We are a computer generation company, and we are pleased to provide high quality and reliable wired and wireless computer network services. We pride ourselves on our extensive experience and knowledge in the design, implementation and maintenance of networks, working with clients in various sectors including homes, SMEs and large enterprises.",
+      "networkDesign": {
+        "title": "Network Design",
+        "description": "Whether you require a wired or wireless network, our dedicated team has the expertise to analyze your needs and design a dedicated network that meets your exact requirements."
+      },
+      "networkInstallationConfiguration": {
+        "title": "Network Installation & Configuration",
+        "description": "With our installation and configuration experience, we will connect cables and install routers, switches and other devices correctly."
+      },
+      "securityProtection": {
+        "title": "Security & Protection",
+        "description": "We understand the importance of security in networks, so we will implement appropriate security measures to protect your sensitive data and information."
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "After the network is installed, we will provide ongoing maintenance and support services."
+      },
+      "networkExpansion": {
+        "title": "Network Expansion",
+        "description": "If you plan to expand your existing network or add a new location, we will help you expand the network smoothly and efficiently."
+      }
+    }
+  },
+  "service2": {
+    "title": "Supply Installation & Maintenance Of PABX"
+  }
+}
