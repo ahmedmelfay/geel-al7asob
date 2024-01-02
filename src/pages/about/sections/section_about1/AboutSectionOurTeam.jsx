@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-var pic1 = require("../../../../assets/images/team/pic1.jpg");
-var pic2 = require("../../../../assets/images/team/pic2.jpg");
-var pic3 = require("../../../../assets/images/team/pic3.jpg");
+// var pic1 = require("../../../../assets/images/team/pic1.jpg");
+// var pic2 = require("../../../../assets/images/team/pic2.jpg");
+// var pic3 = require("../../../../assets/images/team/pic3.jpg");
 
 const AboutSectionOurTeam = (props) => {
   const data = [
@@ -17,14 +17,11 @@ const AboutSectionOurTeam = (props) => {
 
   return (
     <>
-      {/* <!-- OUR TEAM START -->*/}
       <div className="section-full p-t80 p-b50">
         <div className="container">
-          {/* <!-- TITLE START-->*/}
           <div className="section-head center wt-small-separator-outer text-center">
             <h2>Our Services</h2>
           </div>
-          {/* <!-- TITLE END-->*/}
 
           <div className="section-content quality-section-outer">
             <div className="container">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AboutSectionAbout from "./sections/section_about1/AboutSectionAbout";
 import AboutSectionOurTeam from "./sections/section_about1/AboutSectionOurTeam";
@@ -6,6 +6,10 @@ import AboutSectionOurTeam from "./sections/section_about1/AboutSectionOurTeam";
 var three = require("../../assets/images/banner/3.jpg");
 
 const AboutPage1 = (props) => {
+  useEffect(() => {
+    document.title = "Hasoup | About Us";
+  }, []);
+
   return (
     <>
       <div
