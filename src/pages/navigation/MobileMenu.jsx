@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function MobileMenu() {
+  const { t, i18n } = useTranslation();
+
   const [isNavExpanded1, setIsNavExpanded1] = useState(false);
 
   return (
@@ -40,7 +43,9 @@ export default function MobileMenu() {
               style={{ display: isNavExpanded1 ? "block" : "none" }}
             >
               <li>
-                <Link to="/services1">Services one</Link>
+                <Link to="/computer-network-services">
+                  {t("computerNetworkServices.title")}
+                </Link>
               </li>
               <li>
                 <Link to="/services2">Services Two</Link>
@@ -49,6 +54,16 @@ export default function MobileMenu() {
                 <Link to="/services-detail">Services detail</Link>
               </li>
             </ul>
+          </li>
+
+          <li>
+            <Link
+              onClick={() =>
+                i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar")
+              }
+            >
+              {t("navigationMenu.language")}
+            </Link>
           </li>
           {/* <li className={`has-child ${isNavExpanded1 ? "nav-active" : ""} `}>
             <Link to="/">Home</Link>
