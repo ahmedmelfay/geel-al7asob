@@ -40,7 +40,6 @@
     "mainServiceSection": {
       "all": "All Services",
       "explore": "Explore Our Main Services",
-      "description": "We are a computer generation company, and we are pleased to provide high quality and reliable wired and wireless computer network services. We pride ourselves on our extensive experience and knowledge in the design, implementation and maintenance of networks, working with clients in various sectors including homes, SMEs and large enterprises.",
       "networkDesign": {
         "title": "Network Design",
         "description": "Whether you require a wired or wireless network, our dedicated team has the expertise to analyze your needs and design a dedicated network that meets your exact requirements."
@@ -61,9 +60,53 @@
         "title": "Network Expansion",
         "description": "If you plan to expand your existing network or add a new location, we will help you expand the network smoothly and efficiently."
       }
+    },
+    "ourVision": {
+      "title": "Our Vision",
+      "description": "Wired & Wireless Computer Network Services"
     }
   },
-  "service2": {
-    "title": "Supply Installation & Maintenance Of PABX"
+  "pabx": {
+    "title": "Supply Installation & Maintenance Of PABX",
+    "allServiceSection": {
+      "theBest": "The Best Supply Installation & Maintenance Of PABX Services",
+      "explore": "Explore Our Main Services",
+      "supply": {
+        "title": "Supply Of PABX",
+        "description": "We offer a variety of high-quality PABX to suit your business needs."
+      },
+      "installation": {
+        "title": "PABX Installation",
+        "description": "PABX installation is a delicate and complex process, but you don't have to worry."
+      },
+      "programming": {
+        "title": "PABX Programming",
+        "description": "We will program PABX according to your unique business needs."
+      }
+    },
+    "mainServiceSection": {
+      "all": "All Services",
+      "explore": "Explore Our Main Services",
+      "supply": {
+        "title": "Supply Of PABX",
+        "description": "We offer a variety of high-quality PABX to suit your business needs."
+      },
+      "installation": {
+        "title": "PABX Installation",
+        "description": "PABX installation is a delicate and complex process, but you don't have to worry."
+      },
+      "programming": {
+        "title": "PABX Programming",
+        "description": "We will program PABX according to your unique business needs."
+      },
+      "maintenance": {
+        "title": "PABX Maintenance",
+        "description": "We provide regular PABX maintenance services to ensure smooth business continuity and high productivity."
+      }
+    },
+    "ourVision": {
+      "title": "Our Vision",
+      "description": "Supply Installation & Maintenance Of PABX"
+    }
   }
 }
