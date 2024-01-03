@@ -56,6 +56,9 @@ const Navigation = () => {
                 <Link to="/smart-home">{t("smart.title")}</Link>
               </li>
               <li>
+                <Link to="/e-marketing">{t("marketing.title")}</Link>
+              </li>
+              <li>
                 <Link to="/services2">{t("service2.title")}</Link>
               </li>
               <li>

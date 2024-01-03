@@ -155,5 +155,52 @@
       "title": "Our Vision",
       "description": "Smart Home Implementation Services"
     }
+  },
+  "marketing": {
+    "title": "E-Marketing",
+    "allServiceSection": {
+      "theBest": "The Best E-Marketing Services",
+      "explore": "Explore Our Main Services",
+      "socialMedia": {
+        "title": "Social Media Advertising Campaigns Management",
+        "description": "We provide integrated advertising campaign creation and implementation services on social media platforms such as Facebook, Twitter, Instagram and LinkedIn."
+      },
+      "seo": {
+        "title": "Organic Search & Search Engine Optimization (SEO)",
+        "description": "We will help you increase the visibility of your website in the results of global search engines such as Google."
+      },
+      "sem": {
+        "title": "Paid Search Engine Advertising (SEM)",
+        "description": "We will implement paid advertising campaigns on global search engines such as Google Adwords."
+      }
+    },
+    "mainServiceSection": {
+      "all": "All Services",
+      "explore": "Explore Our Main Services",
+      "socialMedia": {
+        "title": "Social Media Advertising Campaigns Management",
+        "description": "We provide integrated advertising campaign creation and implementation services on social media platforms such as Facebook, Twitter, Instagram and LinkedIn."
+      },
+      "seo": {
+        "title": "Organic Search & Search Engine Optimization (SEO)",
+        "description": "We will help you increase the visibility of your website in the results of global search engines such as Google."
+      },
+      "sem": {
+        "title": "Paid Search Engine Advertising (SEM)",
+        "description": "We will implement paid advertising campaigns on global search engines such as Google Adwords."
+      },
+      "contentManagement": {
+        "title": "Content Management",
+        "description": "We will create and manage quality content that targets the target audience and enhances customer engagement."
+      },
+      "analytics": {
+        "title": "Analytics & Reports",
+        "description": "We will implement paid advertising campaigns on global search engines such as Google Adwords."
+      }
+    },
+    "ourVision": {
+      "title": "Our Vision",
+      "description": "E-Marketing"
+    }
   }
 }
