@@ -21,6 +21,12 @@ import SmartSecurity from "../pages/services/sections/Smart/SmartSecurity";
 import SmartTemperature from "../pages/services/sections/Smart/SmartTemperature";
 import SmartAppliance from "../pages/services/sections/Smart/SmartAppliance";
 import SmartAssistant from "../pages/services/sections/Smart/SmartAssistant";
+import MarketingPage from "../pages/services/MarketingPage";
+import MarketingAdvertising from "../pages/services/sections/Marketing/MarketingAdvertising";
+import MarketingSeo from "../pages/services/sections/Marketing/MarketingSeo";
+import MarketingSem from "../pages/services/sections/Marketing/MarketingSem";
+import MarketingManagement from "../pages/services/sections/Marketing/MarketingManagement";
+import MarketingAnalytics from "../pages/services/sections/Marketing/MarketingAnalytics";
 
 const ServicesLayout = () => {
   function titleCase(str) {
@@ -89,6 +95,25 @@ const ServicesLayout = () => {
         break;
       case "Smart-home/compatibility-with-personal-assistants":
         pageRef.displayPage = <SmartAssistant />;
+        break;
+      // Marketing
+      case "E-marketing":
+        pageRef.displayPage = <MarketingPage />;
+        break;
+      case "E-marketing/social-media-advertising":
+        pageRef.displayPage = <MarketingAdvertising />;
+        break;
+      case "E-marketing/seo":
+        pageRef.displayPage = <MarketingSeo />;
+        break;
+      case "E-marketing/sem":
+        pageRef.displayPage = <MarketingSem />;
+        break;
+      case "E-marketing/content-management":
+        pageRef.displayPage = <MarketingManagement />;
+        break;
+      case "E-marketing/analytics-and-reports":
+        pageRef.displayPage = <MarketingAnalytics />;
         break;
       case "Services2":
         pageRef.displayPage = <ServicesPage2 />;

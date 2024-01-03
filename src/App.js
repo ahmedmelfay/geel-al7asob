@@ -121,6 +121,25 @@ function App() {
               path="/smart-home/compatibility-with-personal-assistants"
               element={<ServicesLayout />}
             />
+            {/* Marketing */}
+            <Route exact path="/e-marketing" element={<ServicesLayout />} />
+            <Route
+              exact
+              path="/e-marketing/social-media-advertising"
+              element={<ServicesLayout />}
+            />
+            <Route exact path="/e-marketing/seo" element={<ServicesLayout />} />
+            <Route exact path="/e-marketing/sem" element={<ServicesLayout />} />
+            <Route
+              exact
+              path="/e-marketing/content-management"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/e-marketing/analytics-and-reports"
+              element={<ServicesLayout />}
+            />
             <Route exact path="/services2" element={<ServicesLayout />} />
             <Route exact path="/services-detail" element={<ServicesLayout />} />
             <Route exact path="/gallery-grid" element={<GalleryLayout />} />

@@ -54,6 +54,9 @@ export default function MobileMenu() {
                 <Link to="/smart-home">{t("smart.title")}</Link>
               </li>
               <li>
+                <Link to="/e-marketing">{t("marketing.title")}</Link>
+              </li>
+              <li>
                 <Link to="/services2">Services Two</Link>
               </li>
               <li>
