@@ -50,6 +50,9 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/pabx">{t("pabx.title")}</Link>
+              </li>
+              <li>
                 <Link to="/services2">{t("service2.title")}</Link>
               </li>
               <li>

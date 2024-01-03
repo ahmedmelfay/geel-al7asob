@@ -10,6 +10,11 @@ import NetworkInstallation from "../pages/services/sections/ComputerNetworkServi
 import NetworkSecurity from "../pages/services/sections/ComputerNetworkServices/NetworkSecurity";
 import NetworkMaintenance from "../pages/services/sections/ComputerNetworkServices/NetworkMaintenance";
 import NetworkExpansion from "../pages/services/sections/ComputerNetworkServices/NetworkExpansion";
+import PabxPage from "../pages/services/PabxPage";
+import PabxSupply from "../pages/services/sections/Pabx/PabxSupply";
+import PabxInstallation from "../pages/services/sections/Pabx/PabxInstallation";
+import PabxProgramming from "../pages/services/sections/Pabx/PabxProgramming";
+import PabxMaintenance from "../pages/services/sections/Pabx/PabxMaintenance";
 
 const ServicesLayout = () => {
   function titleCase(str) {
@@ -24,6 +29,7 @@ const ServicesLayout = () => {
     var location = useLocation();
     var loc = titleCase(location.pathname.replace("/", "")).trim();
     switch (loc) {
+      // Computer Network Services
       case "Services":
       case "Computer-network-services":
         pageRef.displayPage = <ComputerNetworkServicesPage />;
@@ -42,6 +48,22 @@ const ServicesLayout = () => {
         break;
       case "Computer-network-services/network-expansion":
         pageRef.displayPage = <NetworkExpansion />;
+        break;
+      // Pabx
+      case "Pabx":
+        pageRef.displayPage = <PabxPage />;
+        break;
+      case "Pabx/supply-of-pabx":
+        pageRef.displayPage = <PabxSupply />;
+        break;
+      case "Pabx/pabx-installation":
+        pageRef.displayPage = <PabxInstallation />;
+        break;
+      case "Pabx/pabx-programming":
+        pageRef.displayPage = <PabxProgramming />;
+        break;
+      case "Pabx/pabx-maintenance":
+        pageRef.displayPage = <PabxMaintenance />;
         break;
       case "Services2":
         pageRef.displayPage = <ServicesPage2 />;
