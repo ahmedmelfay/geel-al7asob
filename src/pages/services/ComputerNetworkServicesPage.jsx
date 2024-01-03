@@ -4,10 +4,11 @@ import ServicesSectionAllServices from "./sections/section_ComputerNetworkServic
 import ServicesSectionMainlServices from "./sections/section_ComputerNetworkServicesPage/ServicesSectionMainlServices";
 import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import { useTranslation } from "react-i18next";
+import NetworkParagraphAndImages from "./sections/ComputerNetworkServices/main/NetworkParagraphAndImages";
 var one = require("../../assets/images/ComputerNetworkServices/1.jpg");
 
 const ComputerNetworkServicesPage = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -44,8 +45,46 @@ const ComputerNetworkServicesPage = (props) => {
       </div>
       {/* <!-- INNER PAGE BANNER END --> */}
 
+      <div className="section-full p-t80">
+        <div className="section-content">
+          <div className="container">
+            <div className="wt-box services-etc m-b30">
+              <div className="wt-info">
+                {i18n.language === "ar" ? (
+                  <>
+                    <p>
+                      نحن نفخر بخبرتنا ومعرفتنا الواسعة في مجال تصميم وتنفيذ
+                      وصيانة الشبكات.
+                    </p>
+                    <p>
+                      نعمل مع العملاء في مختلف القطاعات بما في ذلك المنازل
+                      والشركات الصغيرة والمتوسطة والمؤسسات الكبيرة.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p>
+                      We are a computer generation company, and we are pleased
+                      to provide high quality and reliable wired and wireless
+                      computer network services.
+                    </p>
+                    <p>
+                      We pride ourselves on our extensive experience and
+                      knowledge in the design, implementation and maintenance of
+                      networks, working with clients in various sectors
+                      including homes, SMEs and large enterprises.
+                    </p>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <ServicesSectionAllServices />
       <ServicesSectionMainlServices />
+      {i18n.language === "en" && <NetworkParagraphAndImages />}
       <ServicesSectionContactUs />
     </>
   );

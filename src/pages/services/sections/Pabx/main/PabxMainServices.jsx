@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-var pic1 = require("../../../../assets/images/ComputerNetworkServices/2.webp");
-var pic2 = require("../../../../assets/images/ComputerNetworkServices/3.jpg");
-var pic3 = require("../../../../assets/images/ComputerNetworkServices/4.webp");
-var pic4 = require("../../../../assets/images/ComputerNetworkServices/5.webp");
-var pic5 = require("../../../../assets/images/ComputerNetworkServices/6.webp");
+var pic1 = require("../../../../../assets/images/Pabx/2.webp");
+var pic2 = require("../../../../../assets/images/Pabx/3.jpg");
+var pic3 = require("../../../../../assets/images/Pabx/4.jpg");
+var pic4 = require("../../../../../assets/images/Pabx/5.jpg");
 
-const ServicesSectionMainServices = (props) => {
+const PabxMainServices = (props) => {
   const { t } = useTranslation();
 
   return (
@@ -19,28 +18,18 @@ const ServicesSectionMainServices = (props) => {
 
           <div className="wt-separator-two-part">
             <div className="row wt-separator-two-part-row">
-              <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
+              <div className="col-lg-5 col-md-6 wt-separator-two-part-left">
                 {/* <!-- TITLE START-->*/}
                 <div className="section-head left wt-small-separator-outer">
                   <div className="wt-small-separator site-text-primary">
                     <div className="sep-leaf-left"></div>
-                    <div>
-                      {t("computerNetworkServices.mainServiceSection.all")}
-                    </div>
+                    <div>{t("pabx.mainServiceSection.all")}</div>
                     <div className="sep-leaf-right"></div>
                   </div>
-                  <h2>
-                    {t("computerNetworkServices.mainServiceSection.explore")}
-                  </h2>
+                  <h2>{t("pabx.mainServiceSection.explore")}</h2>
                 </div>
                 {/* <!-- TITLE END-->*/}
               </div>
-
-              {/* <div className="col-lg-7 col-md-6 wt-separator-two-part-right text-left">
-                <p>
-                  {t("computerNetworkServices.mainServiceSection.description")}
-                </p>
-              </div> */}
             </div>
           </div>
 
@@ -54,17 +43,11 @@ const ServicesSectionMainServices = (props) => {
                   <div className="imghvr-content">
                     <div className="imghvr-mid">
                       <h3 className="wt-title">
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkDesign.title"
-                        )}
+                        {t("pabx.mainServiceSection.supply.title")}
                       </h3>
-                      <p>
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkDesign.description"
-                        )}
-                      </p>
+                      <p>{t("pabx.mainServiceSection.supply.description")}</p>
                       <Link
-                        to="network-design"
+                        to="supply-of-pabx"
                         className="site-button-link site-text-primary"
                       >
                         {t("readMore")}
@@ -80,17 +63,13 @@ const ServicesSectionMainServices = (props) => {
                   <div className="imghvr-content">
                     <div className="imghvr-mid">
                       <h3 className="wt-title">
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkInstallationConfiguration.title"
-                        )}
+                        {t("pabx.mainServiceSection.installation.title")}
                       </h3>
                       <p>
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkInstallationConfiguration.description"
-                        )}
+                        {t("pabx.mainServiceSection.installation.description")}
                       </p>
                       <Link
-                        to="network-installation-and-configuration"
+                        to="pabx-installation"
                         className="site-button-link site-text-primary"
                       >
                         {t("readMore")}
@@ -106,17 +85,13 @@ const ServicesSectionMainServices = (props) => {
                   <div className="imghvr-content">
                     <div className="imghvr-mid">
                       <h3 className="wt-title">
-                        {t(
-                          "computerNetworkServices.mainServiceSection.securityProtection.title"
-                        )}
+                        {t("pabx.mainServiceSection.programming.title")}
                       </h3>
                       <p>
-                        {t(
-                          "computerNetworkServices.mainServiceSection.securityProtection.description"
-                        )}
+                        {t("pabx.mainServiceSection.programming.description")}
                       </p>
                       <Link
-                        to="security-and-protection"
+                        to="pabx-programming"
                         className="site-button-link site-text-primary"
                       >
                         {t("readMore")}
@@ -132,43 +107,13 @@ const ServicesSectionMainServices = (props) => {
                   <div className="imghvr-content">
                     <div className="imghvr-mid">
                       <h3 className="wt-title">
-                        {t(
-                          "computerNetworkServices.mainServiceSection.maintenanceSupport.title"
-                        )}
+                        {t("pabx.mainServiceSection.maintenance.title")}
                       </h3>
                       <p>
-                        {t(
-                          "computerNetworkServices.mainServiceSection.maintenanceSupport.description"
-                        )}
+                        {t("pabx.mainServiceSection.maintenance.description")}
                       </p>
                       <Link
-                        to="maintenance-and-support"
-                        className="site-button-link site-text-primary"
-                      >
-                        {t("readMore")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 m-b30">
-                <div className="imghvr-zoom-out-down grayscale-img">
-                  <img src={pic5} alt="" />
-                  <div className="imghvr-content">
-                    <div className="imghvr-mid">
-                      <h3 className="wt-title">
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkExpansion.title"
-                        )}
-                      </h3>
-                      <p>
-                        {t(
-                          "computerNetworkServices.mainServiceSection.networkExpansion.description"
-                        )}
-                      </p>
-                      <Link
-                        to="network-expansion"
+                        to="pabx-maintenance"
                         className="site-button-link site-text-primary"
                       >
                         {t("readMore")}
@@ -185,4 +130,4 @@ const ServicesSectionMainServices = (props) => {
     </>
   );
 };
-export default ServicesSectionMainServices;
+export default PabxMainServices;

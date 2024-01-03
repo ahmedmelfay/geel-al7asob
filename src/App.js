@@ -48,23 +48,50 @@ function App() {
               element={<ServicesLayout />}
             />
             <Route
+              exact
               path="/computer-network-services/network-design"
               element={<ServicesLayout />}
             />
             <Route
+              exact
               path="/computer-network-services/network-installation-and-configuration"
               element={<ServicesLayout />}
             />
             <Route
+              exact
               path="/computer-network-services/security-and-protection"
               element={<ServicesLayout />}
             />
             <Route
+              exact
               path="/computer-network-services/maintenance-and-support"
               element={<ServicesLayout />}
             />
             <Route
+              exact
               path="/computer-network-services/network-expansion"
+              element={<ServicesLayout />}
+            />
+            {/* PABX */}
+            <Route exact path="/pabx" element={<ServicesLayout />} />
+            <Route
+              exact
+              path="/pabx/supply-of-pabx"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/pabx/pabx-installation"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/pabx/pabx-programming"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/pabx/pabx-maintenance"
               element={<ServicesLayout />}
             />
             <Route exact path="/services2" element={<ServicesLayout />} />
