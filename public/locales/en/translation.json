@@ -108,5 +108,52 @@
       "title": "Our Vision",
       "description": "Supply Installation & Maintenance Of PABX"
     }
+  },
+  "smart": {
+    "title": "Smart Home Implementation Services",
+    "allServiceSection": {
+      "theBest": "The Best Smart Home Implementation Services",
+      "explore": "Explore Our Main Services",
+      "lightingControl": {
+        "title": "Lighting Control",
+        "description": "You can easily control your home lighting via your smartphone or central control panel."
+      },
+      "securityAndMonitoring": {
+        "title": "Security & Monitoring",
+        "description": "You can monitor and secure your home remotely through the smart home system."
+      },
+      "temperatureControl": {
+        "title": "Temperature Control",
+        "description": "You can intelligently adjust and control the temperature in your home."
+      }
+    },
+    "mainServiceSection": {
+      "all": "All Services",
+      "explore": "Explore Our Main Services",
+      "lightingControl": {
+        "title": "Lighting Control",
+        "description": "You can easily control your home lighting via your smartphone or central control panel."
+      },
+      "securityAndMonitoring": {
+        "title": "Security & Monitoring",
+        "description": "You can monitor and secure your home remotely through the smart home system."
+      },
+      "temperatureControl": {
+        "title": "Temperature Control",
+        "description": "You can intelligently adjust and control the temperature in your home."
+      },
+      "applianceControl": {
+        "title": "Home Appliance Control",
+        "description": "You can control major home appliances such as TVs, air conditioners, and audio devices via smart home technology."
+      },
+      "personalAssistants": {
+        "title": "Compatibility With Personal Assistants",
+        "description": "You can integrate smart home with personal assistants like Amazon's Alexa, Google Home, or Apple HomePod to control your home's voice."
+      }
+    },
+    "ourVision": {
+      "title": "Our Vision",
+      "description": "Smart Home Implementation Services"
+    }
   }
 }
