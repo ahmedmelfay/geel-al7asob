@@ -94,6 +94,33 @@ function App() {
               path="/pabx/pabx-maintenance"
               element={<ServicesLayout />}
             />
+            {/* Smart */}
+            <Route exact path="/smart-home" element={<ServicesLayout />} />
+            <Route
+              exact
+              path="/smart-home/lighting-control"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/smart-home/security-and-monitoring"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/smart-home/temperature-control"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/smart-home/home-appliance-control"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/smart-home/compatibility-with-personal-assistants"
+              element={<ServicesLayout />}
+            />
             <Route exact path="/services2" element={<ServicesLayout />} />
             <Route exact path="/services-detail" element={<ServicesLayout />} />
             <Route exact path="/gallery-grid" element={<GalleryLayout />} />

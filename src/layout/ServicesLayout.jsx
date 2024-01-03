@@ -15,6 +15,12 @@ import PabxSupply from "../pages/services/sections/Pabx/PabxSupply";
 import PabxInstallation from "../pages/services/sections/Pabx/PabxInstallation";
 import PabxProgramming from "../pages/services/sections/Pabx/PabxProgramming";
 import PabxMaintenance from "../pages/services/sections/Pabx/PabxMaintenance";
+import SmartPage from "../pages/services/SmartPage";
+import SmartLighting from "../pages/services/sections/Smart/SmartLighting";
+import SmartSecurity from "../pages/services/sections/Smart/SmartSecurity";
+import SmartTemperature from "../pages/services/sections/Smart/SmartTemperature";
+import SmartAppliance from "../pages/services/sections/Smart/SmartAppliance";
+import SmartAssistant from "../pages/services/sections/Smart/SmartAssistant";
 
 const ServicesLayout = () => {
   function titleCase(str) {
@@ -64,6 +70,25 @@ const ServicesLayout = () => {
         break;
       case "Pabx/pabx-maintenance":
         pageRef.displayPage = <PabxMaintenance />;
+        break;
+      // Smart Home
+      case "Smart-home":
+        pageRef.displayPage = <SmartPage />;
+        break;
+      case "Smart-home/lighting-control":
+        pageRef.displayPage = <SmartLighting />;
+        break;
+      case "Smart-home/security-and-monitoring":
+        pageRef.displayPage = <SmartSecurity />;
+        break;
+      case "Smart-home/temperature-control":
+        pageRef.displayPage = <SmartTemperature />;
+        break;
+      case "Smart-home/home-appliance-control":
+        pageRef.displayPage = <SmartAppliance />;
+        break;
+      case "Smart-home/compatibility-with-personal-assistants":
+        pageRef.displayPage = <SmartAssistant />;
         break;
       case "Services2":
         pageRef.displayPage = <ServicesPage2 />;
