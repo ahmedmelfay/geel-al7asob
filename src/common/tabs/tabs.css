@@ -1,7 +1,7 @@
 .wt-tabs.bg-tabs .nav-tabs > li.react-tabs__tab--selected
 {
 	  border: 1px solid #ddd;
-	  color: #d72323;
+	  color: #1a1a1a;
 	  border-radius:0px 0px 0 0!important;
 }
 .wt-tabs.bg-tabs .nav-tabs > li.react-tabs__tab
