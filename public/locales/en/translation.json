@@ -202,5 +202,42 @@
       "title": "Our Vision",
       "description": "E-Marketing"
     }
+  },
+  "programming": {
+    "title": "Programming",
+    "allServiceSection": {
+      "theBest": "The Best Programming Services",
+      "explore": "Explore Our Main Services",
+      "cloud": {
+        "title": "Cloud Solutions Development and Web Services",
+        "description": "We help you harness the power of cloud computing and develop effective web applications and services."
+      },
+      "businessAdministration": {
+        "title": "Development Of Business Administration Programs",
+        "description": "We provide customized software solutions to manage the company's day-to-day operations."
+      }
+    }
+  },
+  "accProgramming": {
+    "title": "Programming solutions for accounting systems",
+    "allServiceSection": {
+      "theBest": "The Best Programming Solutions For Accounting Systems",
+      "explore": "Explore Our Main Services",
+      "custom": "Design & Development Of Custom Accounting Software",
+      "integration": "Systems Integration & Standard Compatibility",
+      "reporting": "Accounts & Financial Reporting Department",
+      "budget": "Budget Management & Financial Planning",
+      "security": "Data Protection & Information Security"
+    }
+  },
+  "healthProgramming": {
+    "title": "Programming Solutions For Health Systems",
+    "allServiceSection": {
+      "theBest": "The Best Programming Solutions For Health Systems",
+      "explore": "Explore Our Main Services",
+      "hospital": "HIS Hospital Programs",
+      "quality": "Quality Testing & Assurance",
+      "training": "Training Technicians Support"
+    }
   }
 }

@@ -27,6 +27,12 @@ import MarketingSeo from "../pages/services/sections/Marketing/MarketingSeo";
 import MarketingSem from "../pages/services/sections/Marketing/MarketingSem";
 import MarketingManagement from "../pages/services/sections/Marketing/MarketingManagement";
 import MarketingAnalytics from "../pages/services/sections/Marketing/MarketingAnalytics";
+import ProgrammingPage from "../pages/services/ProgrammingPage";
+import ProgrammingCloud from "../pages/services/sections/Programming/ProgrammingCloud";
+import ProgrammingBusiness from "../pages/services/sections/Programming/ProgrammingBusiness";
+import AccProgrammingPage from "../pages/services/AccProgrammingPage";
+import HealthProgrammingPage from "../pages/services/HealthProgrammingPage";
+import HealthProgrammingHis from "../pages/services/sections/HealthProgramming/HealthProgrammingHis";
 
 const ServicesLayout = () => {
   function titleCase(str) {
@@ -114,6 +120,27 @@ const ServicesLayout = () => {
         break;
       case "E-marketing/analytics-and-reports":
         pageRef.displayPage = <MarketingAnalytics />;
+        break;
+      // Programming
+      case "Programming":
+        pageRef.displayPage = <ProgrammingPage />;
+        break;
+      case "Programming/cloud-solutions-development-and-web-services":
+        pageRef.displayPage = <ProgrammingCloud />;
+        break;
+      case "Programming/development-of-business-administration-programs":
+        pageRef.displayPage = <ProgrammingBusiness />;
+        break;
+      // AccProgramming
+      case "Accounting-programming":
+        pageRef.displayPage = <AccProgrammingPage />;
+        break;
+      // HealthProgramming
+      case "Health-programming":
+        pageRef.displayPage = <HealthProgrammingPage />;
+        break;
+      case "Health-programming/his-hospital-program":
+        pageRef.displayPage = <HealthProgrammingHis />;
         break;
       case "Services2":
         pageRef.displayPage = <ServicesPage2 />;
