@@ -239,5 +239,17 @@
       "quality": "Quality Testing & Assurance",
       "training": "Training Technicians Support"
     }
+  },
+  "cameras": {
+    "title": "Supply & Installation Of Surveillance Cameras",
+    "allServiceSection": {
+      "theBest": "The Best Supply & Installation Of Surveillance Cameras Services",
+      "explore": "Explore Our Main Services",
+      "consulting": "Customized Consulting",
+      "monitoring": "Supply Of Monitoring Systems",
+      "configuration": "Installation & Configuration Of Systems",
+      "training": "Software Configuration & Training",
+      "support": "Technical Support & Maintenance"
+    }
   }
 }

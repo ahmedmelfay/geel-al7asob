@@ -169,6 +169,12 @@ function App() {
               path="/health-programming/his-hospital-program"
               element={<ServicesLayout />}
             />
+            {/* Cameras */}
+            <Route
+              exact
+              path="/surveillance-cameras"
+              element={<ServicesLayout />}
+            />
             <Route exact path="/services2" element={<ServicesLayout />} />
             <Route exact path="/services-detail" element={<ServicesLayout />} />
             <Route exact path="/gallery-grid" element={<GalleryLayout />} />
