@@ -251,5 +251,17 @@
       "training": "Software Configuration & Training",
       "support": "Technical Support & Maintenance"
     }
+  },
+  "computerMaintenance": {
+    "title": "Computer Maintenance Services",
+    "allServiceSection": {
+      "theBest": "The Best Computer Maintenance Services",
+      "explore": "Explore Our Main Services",
+      "malfunctions": "Diagnosis & Repair Of Malfunctions",
+      "maintenance": "Maintenance & Cleaning Of Devices",
+      "hardware": "Hardware Upgrade & Optimization",
+      "recovery": "Data Recovery",
+      "consultations": "Installation & Modernization Consultations"
+    }
   }
 }

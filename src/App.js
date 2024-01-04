@@ -175,6 +175,12 @@ function App() {
               path="/surveillance-cameras"
               element={<ServicesLayout />}
             />
+            {/* Computer */}
+            <Route
+              exact
+              path="/computer-maintenance"
+              element={<ServicesLayout />}
+            />
             <Route exact path="/services2" element={<ServicesLayout />} />
             <Route exact path="/services-detail" element={<ServicesLayout />} />
             <Route exact path="/gallery-grid" element={<GalleryLayout />} />
