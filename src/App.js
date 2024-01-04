@@ -140,6 +140,35 @@ function App() {
               path="/e-marketing/analytics-and-reports"
               element={<ServicesLayout />}
             />
+            {/* Programming */}
+            <Route exact path="/programming" element={<ServicesLayout />} />
+            <Route
+              exact
+              path="/programming/cloud-solutions-development-and-web-services"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/programming/development-of-business-administration-programs"
+              element={<ServicesLayout />}
+            />
+            {/* AccProgramming */}
+            <Route
+              exact
+              path="/accounting-programming"
+              element={<ServicesLayout />}
+            />
+            {/* HealthProgramming */}
+            <Route
+              exact
+              path="/health-programming"
+              element={<ServicesLayout />}
+            />
+            <Route
+              exact
+              path="/health-programming/his-hospital-program"
+              element={<ServicesLayout />}
+            />
             <Route exact path="/services2" element={<ServicesLayout />} />
             <Route exact path="/services-detail" element={<ServicesLayout />} />
             <Route exact path="/gallery-grid" element={<GalleryLayout />} />
