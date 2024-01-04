@@ -70,6 +70,9 @@ export default function MobileMenu() {
                 </Link>
               </li>
               <li>
+                <Link to="/surveillance-cameras">{t("cameras.title")}</Link>
+              </li>
+              <li>
                 <Link to="/services2">Services Two</Link>
               </li>
               <li>
