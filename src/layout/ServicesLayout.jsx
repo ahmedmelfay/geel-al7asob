@@ -34,6 +34,7 @@ import AccProgrammingPage from "../pages/services/AccProgrammingPage";
 import HealthProgrammingPage from "../pages/services/HealthProgrammingPage";
 import HealthProgrammingHis from "../pages/services/sections/HealthProgramming/HealthProgrammingHis";
 import CamerasPage from "../pages/services/CamerasPage";
+import ComputerPage from "../pages/services/ComputerPage";
 
 const ServicesLayout = () => {
   function titleCase(str) {
@@ -146,6 +147,10 @@ const ServicesLayout = () => {
       // Cameras
       case "Surveillance-cameras":
         pageRef.displayPage = <CamerasPage />;
+        break;
+      // Computer
+      case "Computer-maintenance":
+        pageRef.displayPage = <ComputerPage />;
         break;
       case "Services2":
         pageRef.displayPage = <ServicesPage2 />;

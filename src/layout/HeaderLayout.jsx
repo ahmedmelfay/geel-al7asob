@@ -140,9 +140,10 @@ const HeaderLayout = () => {
                   <button
                     className="header-nav-request"
                     style={{ background: "none", border: "none" }}
-                    onClick={() =>
-                      i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar")
-                    }
+                    onClick={() => {
+                      i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar");
+                      window.location.reload();
+                    }}
                   >
                     {t("navigationMenu.language")}
                   </button>
