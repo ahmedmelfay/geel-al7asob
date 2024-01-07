@@ -1,4 +1,20 @@
 {
+  "home": {
+    "slider": {
+      "title": "Computer Generation Foundation",
+      "description": "Established in (2022) AD, and we seek to gain preference and excellence among companies in providing service with high quality, integrity in dealing with all, and customer trust."
+    },
+    "quality": {
+      "title": "Quality Of Service",
+      "description": "We seek to harmonize the quality and professionalism of the services we provide",
+      "maintenance": "Maintenance & Repair Operations",
+      "installation": "Installation & Commissioning Operations",
+      "deliveries": "Deliveries",
+      "planning": "Planning & Construction Operations",
+      "performance": "How the performance indicator works for all employees",
+      "customerSatisfaction": "Measuring Customer Satisfaction"
+    }
+  },
   "navigationMenu": {
     "home": "Home",
     "aboutUs": "About Us",
