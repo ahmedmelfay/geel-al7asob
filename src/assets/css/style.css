@@ -25,7 +25,7 @@ Version: 1.0
 
 body {
   background-color: #fff;
-  font-family: "Muli", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-weight: 400;
   color: #404040;
   padding: 0px;
@@ -197,12 +197,12 @@ h4,
 h5,
 h6 {
   margin-bottom: 15px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 400;
   line-height: 1.1;
 }
 .title-style-2 {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 h1 a,
@@ -286,7 +286,7 @@ h6 {
   content: attr(data-title);
   color: #1a1a1a;
   opacity: 0.1;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 200px;
   line-height: 100px;
   text-transform: uppercase;
@@ -3108,7 +3108,7 @@ ol.list-num-count.list-outline-none > li:before {
   margin: 1px 0px;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   padding: 10px 15px;
   background-color: #eee;
 }
@@ -3182,7 +3182,7 @@ ol.list-num-count.list-outline-none > li:before {
 
 .masonry-filter.link-style > li a {
   font-size: 22px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .masonry-filter.link-style.white > li:after {
@@ -3320,7 +3320,7 @@ ol.list-num-count.list-outline-none > li:before {
 }
 
 .wt-small-separator {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 15px;
@@ -4086,7 +4086,7 @@ ol.list-num-count.list-outline-none > li:before {
 }
 .testimonial-1 .testimonial-text p {
   margin-bottom: 0px;
-  font-family: "Muli", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -4108,7 +4108,7 @@ ol.list-num-count.list-outline-none > li:before {
   display: block;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .testimonial-1 .testimonial-name::after {
   display: none;
@@ -4149,7 +4149,7 @@ ol.list-num-count.list-outline-none > li:before {
   line-height: 100px;
   color: #fff;
   opacity: 1;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   display: block;
   text-transform: uppercase;
   font-weight: 500;
@@ -4245,7 +4245,7 @@ ol.list-num-count.list-outline-none > li:before {
 }
 .testimonial-2 .testimonial-text p {
   margin-bottom: 0px;
-  font-family: "Muli", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -4267,7 +4267,7 @@ ol.list-num-count.list-outline-none > li:before {
   display: block;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .testimonial-2 .testimonial-name::after {
   display: none;
@@ -4308,7 +4308,7 @@ ol.list-num-count.list-outline-none > li:before {
   line-height: 100px;
   color: #fff;
   opacity: 1;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   display: block;
   text-transform: uppercase;
   font-weight: 500;
@@ -5083,7 +5083,7 @@ ol.list-num-count.list-outline-none > li:before {
   position: relative;
   display: inline-block;
   font-size: 22px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
 }
 
@@ -5628,7 +5628,7 @@ input[type="radio"]:checked + label:before {
   line-height: 20px;
   display: block;
   color: #fff;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
 }
@@ -5781,7 +5781,7 @@ input[type="radio"]:checked + label:before {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .recent-posts-entry .wt-post-info .post-title {
@@ -5832,7 +5832,7 @@ input[type="radio"]:checked + label:before {
   font-size: 18px;
   color: #1a1a1a;
   font-weight: 600;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   text-decoration: none;
 }
 
@@ -5847,7 +5847,7 @@ input[type="radio"]:checked + label:before {
   display: block;
   text-decoration: line-through;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
 }
 
@@ -5857,7 +5857,7 @@ input[type="radio"]:checked + label:before {
   color: #1a1a1a;
   margin-top: 5px;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
 }
 @media only screen and (max-width: 540px) {
@@ -5928,7 +5928,7 @@ input[type="radio"]:checked + label:before {
 
 .your-order-list ul li b {
   color: #1a1a1a;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -6207,7 +6207,7 @@ blockquote p {
   font-size: 20px;
   line-height: 26px;
   padding-left: 0px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   margin-top: 15px;
 }
@@ -6413,7 +6413,7 @@ blockquote span {
   font-size: 30px;
   line-height: 36px;
   padding-left: 0px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 @media only screen and (max-width: 540px) {
@@ -6892,7 +6892,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .date-style-2 .wt-post-meta ul li {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-right: 30px;
 }
 
@@ -6985,7 +6985,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .blog-style-1 .wt-post-meta ul li {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-right: 20px;
 }
 
@@ -7045,7 +7045,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .blog-style-3 .wt-post-meta ul li {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-right: 30px;
 }
 
@@ -7177,7 +7177,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-weight: 600;
   color: #1a1a1a;
   position: relative;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 @media only screen and (max-width: 991px) {
@@ -7598,7 +7598,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-size: 32px;
   line-height: 32px;
   color: #111;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 300;
 }
 .header-info .icon-content {
@@ -7735,7 +7735,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: relative;
   margin: -10px 0px;
   padding: 10px 0px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   text-transform: uppercase;
 }
 
@@ -8417,7 +8417,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .header-style-4 .header-nav-request {
   float: right;
   color: #fff;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
@@ -10633,7 +10633,7 @@ ol.commentlist li::after {
 }
 .contact-info-section span {
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
@@ -11303,7 +11303,7 @@ Spin circle
 
 .site-button-link {
   position: relative;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 18px;
   line-height: 18px;
 }
@@ -11558,7 +11558,7 @@ Spin circle
   font-size: 14px;
   color: #fff;
   font-weight: 600;
-  font-family: "Muli", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 .newsletter-input input::-webkit-input-placeholder {
@@ -11675,7 +11675,7 @@ Spin circle
   line-height: 150px;
   font-weight: 900;
   color: #1a1a1a;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .error-full-page-inner-info h4 {
   font-size: 50px;
@@ -11949,7 +11949,7 @@ textarea.form-control2 {
 }
 
 .site-list-style-one li {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #1a1a1a;
   font-size: 24px;
   position: relative;
@@ -11963,7 +11963,7 @@ textarea.form-control2 {
 }
 
 .site-list-style-one.icon-style li {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #1a1a1a;
   font-size: 24px;
   position: relative;
@@ -12000,7 +12000,7 @@ textarea.form-control2 {
   line-height: 100px;
   color: #1a1a1a;
   opacity: 0.1;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   display: inline-block;
 }
 @media only screen and (max-width: 991px) {
@@ -12146,7 +12146,7 @@ textarea.form-control2 {
   font-weight: 500;
   opacity: 0.5;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 /*----Team Style One--*/
@@ -12194,7 +12194,7 @@ textarea.form-control2 {
 }
 .wt-team-1 .team-social-center ul li a {
   font-size: 16px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   position: relative;
 }
@@ -12255,7 +12255,7 @@ textarea.form-control2 {
 }
 .wt-team-2 .team-social-center ul li a {
   font-size: 16px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   position: relative;
 }
@@ -12431,7 +12431,7 @@ textarea.form-control2 {
   color: #1a1a1a;
   text-decoration: none;
   font-weight: 600;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .wt-product-box .rating-bx {
   padding-top: 10px;
@@ -12631,7 +12631,7 @@ ol.commentlist li .star-rating {
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .shopping-cart-total .shipping {
@@ -12671,7 +12671,7 @@ ol.commentlist li .star-rating {
 .shopping-cart-total .total {
   position: relative;
   padding-top: 20px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .shopping-cart-total .total ul {
@@ -12720,7 +12720,7 @@ ol.commentlist li .star-rating {
 .how-it-drone-info span {
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
   padding-left: 60px;
@@ -12775,7 +12775,7 @@ ol.commentlist li .star-rating {
 .how-it-drone3 .number-style {
   font-style: normal;
   font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #ddd;
 }
 
@@ -12932,7 +12932,7 @@ ol.commentlist li .star-rating {
 
 /*About Section One*/
 .outline-title {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #1a1a1a;
   font-weight: 700;
   font-size: 100px;
@@ -12965,7 +12965,7 @@ ol.commentlist li .star-rating {
 }
 
 .outline-title2 {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -13008,7 +13008,7 @@ ol.commentlist li .star-rating {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #1a1a1a;
   letter-spacing: 5px;
 }
@@ -13064,7 +13064,7 @@ ol.commentlist li .star-rating {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   letter-spacing: 5px;
 }
@@ -13151,7 +13151,7 @@ ol.commentlist li .star-rating {
 .about-drone-three-info span {
   font-size: 100px;
   font-weight: 700;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   line-height: 90px;
   display: block;
@@ -13162,7 +13162,7 @@ ol.commentlist li .star-rating {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   letter-spacing: 5px;
 }
@@ -13335,7 +13335,7 @@ ol.commentlist li .star-rating {
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -13533,7 +13533,7 @@ ol.commentlist li .star-rating {
 /*----Product Showcase slider----*/
 .product-showcase {
   position: relative;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   padding: 100px 45px 45px 45px;
 }
 
@@ -13689,7 +13689,7 @@ ol.commentlist li .star-rating {
 /*----Product Showcase2 slider----*/
 .product-showcase2 {
   position: relative;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Cairo", sans-serif;
   padding: 0px;
   margin-bottom: 20px;
 }
