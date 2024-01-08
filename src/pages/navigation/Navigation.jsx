@@ -34,14 +34,6 @@ const Navigation = () => {
           </li>
 
           <li>
-            <Link to="/about">{t("navigationMenu.aboutUs")}</Link>
-          </li>
-
-          <li>
-            <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
-          </li>
-
-          <li>
             <Link>{t("navigationMenu.services")}</Link>
             <ul className="sub-menu">
               <li>
@@ -86,6 +78,14 @@ const Navigation = () => {
                 <Link to="/services-detail">Services detail</Link>
               </li> */}
             </ul>
+          </li>
+
+          <li>
+            <Link to="/about">{t("navigationMenu.aboutUs")}</Link>
+          </li>
+
+          <li>
+            <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
           </li>
 
           {/* <li>

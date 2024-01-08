@@ -305,5 +305,11 @@
       "recovery": "Data Recovery",
       "consultations": "Installation & Modernization Consultations"
     }
+  },
+  "footer": {
+    "getInTouch": "Get in Touch",
+    "address": "60th Street, Riyadh, KSA",
+    "usefulLinks": "Useful Links",
+    "services": "Services"
   }
 }
