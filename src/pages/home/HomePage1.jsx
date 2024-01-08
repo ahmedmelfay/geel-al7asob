@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 
 import Slider from "./slider/HomeSlider";
-import HomeSectionHowItWork from "./sections/section_home1/HomeSectionHowItWork";
 import HomeSectionAbout from "./sections/section_home1/HomeSectionAbout";
-import HomeSectionAboutQuality from "./sections/section_home1/HomeSectionAboutQuality";
-import HomeSectionProduct from "./sections/section_home1/HomeSectionProduct";
-import HomeSectionVideoGallery from "./sections/section_home1/HomeSectionVideoGallery";
-import HomeSectionOurTeam from "./sections/section_home1/HomeSectionOurTeam";
-import HomeSectionTestimonial from "./sections/section_home1/HomeSectionTestimonial";
-import HomeSectionOurBlog from "./sections/section_home1/HomeSectionOurBlog";
-import HomeSectionClientLogo from "./sections/section_home1/HomeSectionClientLogo";
 import Home2SectionHowItWork from "./sections/section_home2/Home2SectionHowItWork";
+import Home2SectionAboutQuality from "./sections/section_home2/Home2SectionAboutQuality";
+import Home2SectionAbout from "./sections/section_home2/Home2SectionAbout";
+import Home4SectionOurBlog from "./sections/section_home4/Home4SectionOurBlog";
+import { useTranslation } from "react-i18next";
+
 const HomePage1 = (props) => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     const script = document.createElement("script");
 
@@ -19,26 +18,22 @@ const HomePage1 = (props) => {
     script.async = true;
 
     document.body.appendChild(script);
-    document.title = "Hasoup | Home";
+    document.title =
+      i18n.language === "ar" ? "الرئيسية | جيل الحاسوب" : "Hasoup | Home";
 
     return () => {
       document.body.removeChild(script);
     };
-  }, []);
+  });
 
   return (
     <>
       <Slider />
       <Home2SectionHowItWork />
-      <HomeSectionHowItWork />
+      <Home2SectionAboutQuality />
       <HomeSectionAbout />
-      <HomeSectionAboutQuality />
-      <HomeSectionProduct />
-      <HomeSectionVideoGallery />
-      <HomeSectionOurTeam />
-      <HomeSectionTestimonial />
-      <HomeSectionOurBlog />
-      <HomeSectionClientLogo />
+      <Home2SectionAbout />
+      <Home4SectionOurBlog />
     </>
   );
 };

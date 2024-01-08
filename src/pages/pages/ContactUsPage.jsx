@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PagesSectionContactUs from "./sections/PagesSectionContactUs";
+import { useTranslation } from "react-i18next";
 var five = require("../../assets/images/banner/5.jpg");
 const ContactUsPage = (props) => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
-    document.title = "Hasoup | Contact Us";
-  }, []);
+    document.title =
+      i18n.language === "ar"
+        ? "تواصل معنا | جيل الحاسوب"
+        : "Hasoup | Contact Us";
+  });
 
   return (
     <>

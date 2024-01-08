@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
@@ -7,6 +7,11 @@ var one = require("../../assets/images/Programming/1.jpg");
 
 const ProgrammingPage = (props) => {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title =
+      i18n.language === "ar" ? "الخدمات | جيل الحاسوب" : "Hasoup | Services";
+  });
 
   return (
     <>

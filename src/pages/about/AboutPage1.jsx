@@ -2,13 +2,17 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AboutSectionAbout from "./sections/section_about1/AboutSectionAbout";
 import AboutSectionOurTeam from "./sections/section_about1/AboutSectionOurTeam";
+import { useTranslation } from "react-i18next";
 
 var three = require("../../assets/images/banner/3.jpg");
 
 const AboutPage1 = (props) => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
-    document.title = "Hasoup | About Us";
-  }, []);
+    document.title =
+      i18n.language === "ar" ? "نبذة عنا | جيل الحاسوب" : "Hasoup | About Us";
+  });
 
   return (
     <>

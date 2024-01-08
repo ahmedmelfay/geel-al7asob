@@ -102,7 +102,7 @@ const Slider = () => {
                   data-paddingleft="[0,0,0,0]"
                   style={{
                     zIndex: "1",
-                    // backgroundColor: "rgba(0, 0, 0, 0)",
+                    backgroundColor: "rgba(0, 0, 0, 0)",
                     borderColor: "rgba(0, 0, 0, 0)",
                     borderWidth: "0px",
                   }}
@@ -139,7 +139,7 @@ const Slider = () => {
                       src={d1}
                       alt=""
                       data-ww="['533px','500px','350px','250px']"
-                      data-hh="['370px','230px','161px','115px']"
+                      data-hh="['370px','230px','220px','175px']"
                       width="533"
                       height="370"
                       data-no-retina
