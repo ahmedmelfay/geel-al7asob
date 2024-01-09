@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 // var pic1 = require("../../../../assets/images/team/pic1.jpg");
 // var pic2 = require("../../../../assets/images/team/pic2.jpg");
 // var pic3 = require("../../../../assets/images/team/pic3.jpg");
 
 const AboutSectionOurTeam = (props) => {
+  const { t } = useTranslation();
+
   const data = [
-    { title: "Wired and wireless computer network", link: "/" },
-    { title: "Supply installation and maintenance of PABX", link: "/" },
-    { title: "Smart Home Implementation", link: "/" },
-    { title: "Digital Marketing", link: "/" },
-    { title: "Programming", link: "/" },
-    { title: "Supply and installation of surveillance cameras", link: "/" },
-    { title: "Computer Maintenance", link: "/" },
+    { title: t("home.services.network"), link: "/computer-network-services" },
+    { title: t("home.services.pabx"), link: "/pabx" },
+    { title: t("home.services.home"), link: "/smart-home" },
+    { title: t("home.services.marketing"), link: "/e-marketing" },
+    { title: t("home.services.programming"), link: "/programming" },
+    { title: t("home.services.supply"), link: "/surveillance-cameras" },
+    { title: t("home.services.maintenance"), link: "/computer-maintenance" },
   ];
 
   return (
@@ -20,7 +23,7 @@ const AboutSectionOurTeam = (props) => {
       <div className="section-full p-t80 p-b50">
         <div className="container">
           <div className="section-head center wt-small-separator-outer text-center">
-            <h2>Our Services</h2>
+            <h2>{t("home.services.title")}</h2>
           </div>
 
           <div className="section-content quality-section-outer">
@@ -51,7 +54,7 @@ const AboutSectionOurTeam = (props) => {
                               to={item.link}
                               className="site-button-link site-text-primary"
                             >
-                              Read More
+                              {t("readMore")}
                             </Link>
                           </div>
                         </div>

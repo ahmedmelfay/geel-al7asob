@@ -19,7 +19,7 @@ const ServicesSectionContactUs = (props) => {
           <div className="section-head center wt-small-separator-outer text-center text-white">
             <div className="wt-small-separator site-text-primary">
               <div className="sep-leaf-left"></div>
-              <div>{t("contactUs.title")}</div>
+              <div className="text-white">{t("contactUs.title")}</div>
               <div className="sep-leaf-right"></div>
             </div>
             <h2>{t("contactUs.description")}</h2>

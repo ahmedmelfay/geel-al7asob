@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ServicesSectionAllServices from "./sections/section_ComputerNetworkServicesPage/ServicesSectionAllServices";
 import ServicesSectionMainlServices from "./sections/section_ComputerNetworkServicesPage/ServicesSectionMainlServices";
@@ -9,6 +9,11 @@ var one = require("../../assets/images/ComputerNetworkServices/1.jpg");
 
 const ComputerNetworkServicesPage = (props) => {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title =
+      i18n.language === "ar" ? "الخدمات | جيل الحاسوب" : "Hasoup | Services";
+  });
 
   return (
     <>

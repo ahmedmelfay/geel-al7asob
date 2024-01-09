@@ -102,7 +102,7 @@ const Slider = () => {
                   data-paddingleft="[0,0,0,0]"
                   style={{
                     zIndex: "1",
-                    // backgroundColor: "rgba(0, 0, 0, 0)",
+                    backgroundColor: "rgba(0, 0, 0, 0)",
                     borderColor: "rgba(0, 0, 0, 0)",
                     borderWidth: "0px",
                   }}
@@ -139,7 +139,7 @@ const Slider = () => {
                       src={d1}
                       alt=""
                       data-ww="['533px','500px','350px','250px']"
-                      data-hh="['370px','230px','161px','115px']"
+                      data-hh="['370px','230px','220px','175px']"
                       width="533"
                       height="370"
                       data-no-retina
@@ -157,7 +157,7 @@ const Slider = () => {
                   data-y="['top','top','top','top']"
                   data-voffset={
                     i18n.language === "ar"
-                      ? "['350','200','170','170']"
+                      ? "['300','200','170','170']"
                       : "['200','200','170','170']"
                   }
                   data-fontsize="['72','52','42','38']"
@@ -182,7 +182,7 @@ const Slider = () => {
                     fontWeight: "700",
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani', sans-serif",
+                    fontFamily: "'Cairo', sans-serif",
                   }}
                 >
                   <div className="slider-block-black">
@@ -219,7 +219,7 @@ const Slider = () => {
                     fontWeight: "500",
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', sans-serif",
+                    fontFamily: "'IBM Plex Sans Arabic', sans-serif",
                   }}
                 >
                   {t("home.slider.description")}
@@ -417,7 +417,7 @@ const Slider = () => {
                   data-y="['top','top','top','top']"
                   data-voffset={
                     i18n.language === "ar"
-                      ? "['350','200','170','170']"
+                      ? "['300','200','170','170']"
                       : "['200','200','170','170']"
                   }
                   data-fontsize="['72','52','42','38']"
@@ -442,7 +442,7 @@ const Slider = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani', sans-serif",
+                    fontFamily: "'Cairo', sans-serif",
                   }}
                 >
                   <div className="slider-block-red">
@@ -479,7 +479,7 @@ const Slider = () => {
                     fontWeight: 500,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', sans-serif",
+                    fontFamily: "'IBM Plex Sans Arabic', sans-serif",
                   }}
                 >
                   {t("home.slider.description")}

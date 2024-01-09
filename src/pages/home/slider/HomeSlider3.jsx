@@ -179,7 +179,7 @@ const Slider3 = () => {
                     fontWeight: 700,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani', 'sans-serif'",
+                    fontFamily: "'Cairo', 'sans-serif'",
                   }}
                 >
                   <div className="slider-block-sky">
@@ -216,7 +216,7 @@ const Slider3 = () => {
                     fontWeight: 500,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', 'sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic', 'sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum
@@ -436,7 +436,7 @@ const Slider3 = () => {
                     fontWeight: 700,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani', 'sans-serif'",
+                    fontFamily: "'Cairo', 'sans-serif'",
                   }}
                 >
                   <div className="slider-block-sky">
@@ -473,7 +473,7 @@ const Slider3 = () => {
                     fontWeight: 500,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', 'sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic', 'sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum
@@ -693,7 +693,7 @@ const Slider3 = () => {
                     fontWeight: 700,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani', 'sans-serif'",
+                    fontFamily: "'Cairo', 'sans-serif'",
                   }}
                 >
                   <div className="slider-block-sky">
@@ -730,7 +730,7 @@ const Slider3 = () => {
                     fontWeight: 500,
                     color: "#1a1a1a",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', 'sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic', 'sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum

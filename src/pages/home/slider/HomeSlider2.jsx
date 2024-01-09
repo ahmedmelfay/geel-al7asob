@@ -179,7 +179,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                   }}
                 >
                   Capturing moments
@@ -215,7 +215,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                     textTransform: "uppercase",
                   }}
                 >
@@ -253,7 +253,7 @@ const Slider2 = () => {
                     fontWeight: 500,
                     color: "#d3d3d3",
                     borderWidth: "0px",
-                    fontFamily: "'Muli','sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic','sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum
@@ -472,7 +472,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                   }}
                 >
                   Gives You the
@@ -508,7 +508,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                     textTransform: "uppercase",
                   }}
                 >
@@ -544,7 +544,7 @@ const Slider2 = () => {
                     fontWeight: 500,
                     color: "#d3d3d3",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', 'sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic', 'sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum
@@ -763,7 +763,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                   }}
                 >
                   We Capture the
@@ -799,7 +799,7 @@ const Slider2 = () => {
                     fontWeight: 700,
                     color: "#fff",
                     borderWidth: "0px",
-                    fontFamily: "'Rajdhani','sans-serif'",
+                    fontFamily: "'Cairo','sans-serif'",
                     textTransform: "uppercase",
                   }}
                 >
@@ -835,7 +835,7 @@ const Slider2 = () => {
                     fontWeight: 500,
                     color: "#d3d3d3",
                     borderWidth: "0px",
-                    fontFamily: "'Muli', 'sans-serif'",
+                    fontFamily: "'IBM Plex Sans Arabic', 'sans-serif'",
                   }}
                 >
                   There are many variations of passages of lorem Ipsum

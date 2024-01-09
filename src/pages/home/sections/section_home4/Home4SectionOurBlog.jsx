@@ -1,127 +1,218 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-var one = require('../../../../assets/images/blog/default/thumb/1.jpg');
-var two = require('../../../../assets/images/blog/default/thumb/2.jpg');
-var three = require('../../../../assets/images/blog/default/thumb/3.jpg');
+import React from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+var one = require("../../../../assets/images/blog/default/thumb/4.jpg");
+var two = require("../../../../assets/images/blog/default/thumb/5.jpg");
+var three = require("../../../../assets/images/blog/default/thumb/6.jpg");
+var four = require("../../../../assets/images/blog/default/thumb/7.jpg");
+var five = require("../../../../assets/images/blog/default/thumb/8.jpg");
+var six = require("../../../../assets/images/blog/default/thumb/9.jpg");
+var seven = require("../../../../assets/images/blog/default/thumb/10.jpg");
 
+const Home4SectionOurBlog = (props) => {
+  const { t } = useTranslation();
 
-const Home4SectionOurBlog = (props) => {	  	
-    return(
-	<>
-	{/* <!-- OUR BLOG START -->*/}
-	<div className="section-full  p-t80 p-b50   bg-gray">
-		<div className="container">
-		
-			<div className="wt-separator-two-part">
-				<div className="row wt-separator-two-part-row">
-					<div className="col-lg-5 col-md-6 wt-separator-two-part-left">
-						{/* <!-- TITLE START-->*/}
-						<div className="section-head left wt-small-separator-outer">
-							<div className="wt-small-separator site-text-primary">
-								<div  className="sep-leaf-left"></div>
-								<div>Our Latest News</div>
-								<div  className="sep-leaf-right"></div>
-							</div>
-							<h2>The latest news from drones life</h2>
-						</div>
-						{/* <!-- TITLE END-->*/}
-					</div>
-	
-					
-					<div className="col-lg-7 col-md-6 wt-separator-two-part-right text-left">
-						<p>There are many variations of passages of lorem Ipsum available, but the majority have 
-	suffered alteration in some form, by injected humour, or randomised words which don't look even slightly.</p>
-						
-					</div>
-												
-				</div>
-			</div>
-	
-	
-			<div className="section-content">
-				<div className="row d-flex justify-content-center">
-					<div className="col-lg-4 col-md-6 col-sm-12 m-b30">
-						{/* <!--Block one-->*/}
-						<div className="blog-post blog-style-1">
-							<div className="wt-post-media wt-img-effect zoom-slow">
-								<Link to="/"><img src={one} alt=""/></Link>
-							</div>                                    
-							<div className="wt-post-info">
-								<div className="wt-post-meta ">
-									<ul>
-										<li className="post-date">May 9, 2023</li>
-									</ul>
-								</div>                                 
-								<div className="wt-post-title ">
-									<h3 className="post-title">How Amazon is Integrating Drones</h3>
-								</div>
-								<div className="wt-post-text ">
-									<p>suffered alteration in some form, by injected humour, or randomised which don't look even.</p>
-								</div>                                           
-								<div className="wt-post-readmore ">
-									<Link to="/blog-post-right-sidebar" className="site-button-link black">Read More</Link>
-								</div>                                        
-						   </div>                                
-						</div>
-					</div>
-					
-					<div className="col-lg-4 col-md-6 col-sm-12 m-b30">
-						{/* <!--Block two-->*/}
-						<div className="blog-post blog-style-1">
-							<div className="wt-post-media wt-img-effect zoom-slow">
-								<Link to="/"><img src={two} alt=""/></Link>
-							</div>                                     
-							<div className="wt-post-info">
-								<div className="wt-post-meta ">
-									<ul>
-										<li className="post-date">May 15, 2023</li>                                    
-									</ul>
-								</div>                                  
-								<div className="wt-post-title ">
-									<h3 className="post-title">How to Start a Drone Photography</h3>
-								</div>
-								<div className="wt-post-text ">
-									<p>suffered alteration in some form, by injected humour, or randomised which don't look even.</p>
-								</div>                                           
-								<div className="wt-post-readmore ">
-									<Link to="/blog-post-right-sidebar" className="site-button-link black">Read More</Link>
-								</div>                                        
-							</div>                                
-						</div>
-					</div>
-					
-					<div className="col-lg-4 col-md-6 col-sm-12 m-b30">
-						{/* <!--Block three-->*/}
-						<div className="blog-post blog-style-1">
-							<div className="wt-post-media wt-img-effect zoom-slow">
-								<Link to="/"><img src={three} alt=""/></Link>
-							</div>                                     
-							<div className="wt-post-info">
-								<div className="wt-post-meta ">
-									<ul>
-										<li className="post-date">May 20, 2023</li>
-									</ul>
-								</div>                                  
-								<div className="wt-post-title ">
-									<h3 className="post-title">How Amazon is Integrating Drones</h3>
-								</div>
-								<div className="wt-post-text ">
-									<p>suffered alteration in some form, by injected humour, or randomised which don't look even.</p>
-								</div>                                        
-								<div className="wt-post-readmore ">
-									<Link to="/blog-post-right-sidebar" className="site-button-link black">Read More</Link>
-								</div>
-							</div>                                
-						</div> 
-					</div>                                                        
-												
-				</div>
-			</div>
-		</div>
-		
-	 </div>   
-	{/* <!-- OUR BLOG END -->*/}	 
+  return (
+    <>
+      {/* <!-- OUR BLOG START -->*/}
+      <div className="section-full  p-t80 p-b50   bg-gray">
+        <div className="container">
+          <div className="wt-separator-two-part">
+            <div className="row wt-separator-two-part-row">
+              <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
+                {/* <!-- TITLE START-->*/}
+                <div className="section-head left wt-small-separator-outer">
+                  <div className="wt-small-separator site-text-primary">
+                    <div className="sep-leaf-left"></div>
+                    <div>{t("home.services.mini")}</div>
+                    <div className="sep-leaf-right"></div>
+                  </div>
+                  <h2>{t("home.services.title")}</h2>
+                </div>
+                {/* <!-- TITLE END-->*/}
+              </div>
+            </div>
+          </div>
+
+          <div className="section-content">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/computer-network-services">
+                      <img src={one} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">
+                        {t("home.services.network")}
+                      </h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link
+                        to="/computer-network-services"
+                        className="site-button-link black"
+                      >
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/pabx">
+                      <img src={two} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">{t("home.services.pabx")}</h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link to="/pabx" className="site-button-link black">
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/smart-home">
+                      <img src={three} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">{t("home.services.home")}</h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link to="/smart-home" className="site-button-link black">
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/e-marketing">
+                      <img src={four} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">
+                        {t("home.services.marketing")}
+                      </h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link
+                        to="/e-marketing"
+                        className="site-button-link black"
+                      >
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/programming">
+                      <img src={five} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">
+                        {t("home.services.programming")}
+                      </h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link
+                        to="/programming"
+                        className="site-button-link black"
+                      >
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/surveillance-cameras">
+                      <img src={six} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">
+                        {t("home.services.supply")}
+                      </h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link
+                        to="/surveillance-cameras"
+                        className="site-button-link black"
+                      >
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <!--Block one-->*/}
+                <div className="blog-post blog-style-1">
+                  <div className="wt-post-media wt-img-effect zoom-slow">
+                    <Link to="/computer-maintenance">
+                      <img src={seven} alt="" />
+                    </Link>
+                  </div>
+                  <div className="wt-post-info">
+                    <div className="wt-post-title ">
+                      <h3 className="post-title">
+                        {t("home.services.maintenance")}
+                      </h3>
+                    </div>
+                    <div className="wt-post-readmore ">
+                      <Link
+                        to="/computer-maintenance"
+                        className="site-button-link black"
+                      >
+                        {t("readMore")}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- OUR BLOG END -->*/}
     </>
-    )
-}
+  );
+};
 export default Home4SectionOurBlog;

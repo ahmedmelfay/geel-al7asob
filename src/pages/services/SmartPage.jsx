@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SmartParagraphAndImages from "./sections/Smart/main/SmartParagraphAndImages";
@@ -9,6 +9,11 @@ var one = require("../../assets/images/Smart/1.jpg");
 
 const SmartPage = (props) => {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title =
+      i18n.language === "ar" ? "الخدمات | جيل الحاسوب" : "Hasoup | Services";
+  });
 
   return (
     <>

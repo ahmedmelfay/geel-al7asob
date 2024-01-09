@@ -19,19 +19,11 @@ export default function MobileMenu() {
       >
         <ul className=" nav navbar-nav" style={{ height: "300px!important" }}>
           <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-
-          <li>
-            <Link to="/contactus">Contact Us</Link>
+            <Link to="/">{t("navigationMenu.home")}</Link>
           </li>
 
           <li className={`has-child ${isNavExpanded1 ? "nav-active" : ""} `}>
-            <Link>Services</Link>
+            <Link>{t("navigationMenu.services")}</Link>
             <div
               className="fa fa-angle-right submenu-toogle"
               onClick={() => {
@@ -84,6 +76,14 @@ export default function MobileMenu() {
                 <Link to="/services-detail">Services detail</Link>
               </li> */}
             </ul>
+          </li>
+
+          <li>
+            <Link to="/about">{t("navigationMenu.aboutUs")}</Link>
+          </li>
+
+          <li>
+            <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
           </li>
 
           <li>

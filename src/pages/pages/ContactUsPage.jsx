@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PagesSectionContactUs from "./sections/PagesSectionContactUs";
-var five = require("../../assets/images/banner/5.jpg");
+import { useTranslation } from "react-i18next";
+var five = require("../../assets/images/banner/9.jpg");
 const ContactUsPage = (props) => {
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
-    document.title = "Hasoup | Contact Us";
-  }, []);
+    document.title =
+      i18n.language === "ar"
+        ? "تواصل معنا | جيل الحاسوب"
+        : "Hasoup | Contact Us";
+  });
 
   return (
     <>
@@ -19,7 +25,9 @@ const ContactUsPage = (props) => {
           <div className="wt-bnr-inr-entry">
             <div className="banner-title-outer">
               <div className="banner-title-name">
-                <h2 className="site-text-white">Contact Us</h2>
+                <h2 className="site-text-white">
+                  {t("navigationMenu.contactUs")}
+                </h2>
               </div>
             </div>
             {/* <!-- BREADCRUMB ROW --> */}
@@ -27,9 +35,9 @@ const ContactUsPage = (props) => {
             <div>
               <ul className="wt-breadcrumb breadcrumb-style-2">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">{t("navigationMenu.home")}</Link>
                 </li>
-                <li>Contact Us</li>
+                <li>{t("navigationMenu.contactUs")}</li>
               </ul>
             </div>
 

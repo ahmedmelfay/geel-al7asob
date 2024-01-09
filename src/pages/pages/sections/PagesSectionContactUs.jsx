@@ -1,6 +1,9 @@
 import React from "react";
 import SimpleMap from "../../../common/map/SimpleMap";
+import { useTranslation } from "react-i18next";
+
 const PagesSectionContactUs = (props) => {
+  const { t } = useTranslation();
   // const [status, setStatus] = useState("Submit");
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -57,7 +60,7 @@ const PagesSectionContactUs = (props) => {
                     <div className="contact-info-inner">
                       {/*<!-- TITLE START--> */}
                       <div className="section-head left wt-small-separator-outer">
-                        <h3>Our Full Info</h3>
+                        <h3>{t("contactUs.fullInfo")}</h3>
                       </div>
                       {/*<!-- TITLE END--> */}
 
@@ -70,7 +73,9 @@ const PagesSectionContactUs = (props) => {
                       >
                         <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
-                            <span className="m-t0">Phone number</span>
+                            <span className="m-t0">
+                              {t("contactUs.form.phone")}
+                            </span>
                             <a
                               style={{ color: "#404040" }}
                               href="tel:+966503560334"
@@ -82,7 +87,9 @@ const PagesSectionContactUs = (props) => {
 
                         <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
-                            <span className="m-t0">Email address</span>
+                            <span className="m-t0">
+                              {t("contactUs.form.email")}
+                            </span>
                             <a
                               style={{ color: "#404040" }}
                               href="mailto:batayeb@Jeelalhasuop.com"
@@ -94,7 +101,9 @@ const PagesSectionContactUs = (props) => {
 
                         <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
-                            <span className="m-t0">Address info</span>
+                            <span className="m-t0">
+                              {t("contactUs.form.address")}
+                            </span>
                             <a
                               style={{ color: "#404040" }}
                               href="https://maps.app.goo.gl/g1QySQdK9ZHcp5U38"

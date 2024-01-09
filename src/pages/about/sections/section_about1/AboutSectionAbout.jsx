@@ -1,7 +1,11 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 var untitled1 = require("../../../../assets/images/about-drone/7asob.jpeg");
+
 const AboutSectionAbout = (props) => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <div className="section-full p-t80 p-b50 bg-gray">
@@ -19,29 +23,22 @@ const AboutSectionAbout = (props) => {
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="about-section-one-right">
                     <div className="left wt-small-separator-outer">
-                      <h2>
-                        We seek to harmonize the quality and professionalism of
-                        the services we provide
-                      </h2>
-                      <p>
-                        Computer Generation Foundation, was established in
-                        (2022) AD, and we seek to gain preference and excellence
-                        among companies in providing service with high quality,
-                        integrity in dealing with all, and customer trust.
-                      </p>
+                      <h2>{t("home.quality.description")}</h2>
+                      <p>{t("home.slider.description")}</p>
                     </div>
 
                     <ul className="site-list-style-one icon-style">
                       <li>
-                        <i className="flaticon-drone-7"></i>Maintenance and
-                        repair operations.
+                        <i className="flaticon-drone-7"></i>
+                        {t("home.quality.maintenance")}
                       </li>
                       <li>
                         <i className="flaticon-remote-control-1"></i>
-                        Installation and commissioning operations.
+                        {t("home.quality.installation")}
                       </li>
                       <li>
-                        <i className="flaticon-control"></i>Deliveries
+                        <i className="flaticon-control"></i>
+                        {t("home.quality.deliveries")}
                       </li>
                     </ul>
                   </div>
@@ -53,33 +50,24 @@ const AboutSectionAbout = (props) => {
                   <div className="about-section-one-right">
                     <div className="left wt-small-separator-outer">
                       <h2>
-                        We aspire to be the best in the field in the local
-                        market
+                        {i18n.language === "ar"
+                          ? "نتطلع أن نكون الأفضل في المجال بالسوق المحلي و العالمي"
+                          : "We aspire to be the best in the field in the local and global market"}
                       </h2>
-                      <p>
-                        Our mission lies in harmonizing and spreading the
-                        culture of quality in its true concept in the field of
-                        computer and technology in the Kingdom of Saudi Arabia,
-                        in order to create real competition between all
-                        institutions and companies that provide the same
-                        service, whether they are large institutions and
-                        companies or start-ups, and this message that we adopt
-                        is in order to provide the best services at appropriate
-                        costs.
-                      </p>
+                      <p>{t("home.message.description")}</p>
                     </div>
                     <ul className="site-list-style-one icon-style">
                       <li>
-                        <i className="flaticon-drone-7"></i>Planning and
-                        construction operations
+                        <i className="flaticon-drone-7"></i>
+                        {t("home.quality.planning")}
                       </li>
                       <li>
-                        <i className="flaticon-remote-control-1"></i>How the
-                        performance indicator works for all employees
+                        <i className="flaticon-remote-control-1"></i>
+                        {t("home.quality.performance")}
                       </li>
                       <li>
-                        <i className="flaticon-control"></i>Measuring customer
-                        satisfaction
+                        <i className="flaticon-control"></i>
+                        {t("home.quality.customerSatisfaction")}
                       </li>
                     </ul>
                   </div>

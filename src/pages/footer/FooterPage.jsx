@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 var logolight = require("../../assets/images/logo-light.png");
 
 const FooterPage = (props) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {/*<!-- FOOTER START -->*/}
@@ -14,7 +17,7 @@ const FooterPage = (props) => {
             <div className="row">
               <div className="col-lg-3 col-md-6">
                 <div className="widget recent-posts-entry">
-                  <h3 className="widget-title">Get in Touch</h3>
+                  <h3 className="widget-title">{t("footer.getInTouch")}</h3>
                   <ul className="widget_address">
                     <li>
                       <i className="fa fa-map-marker"></i>
@@ -24,7 +27,7 @@ const FooterPage = (props) => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        60th Street, Riyadh, KSA
+                        {t("footer.address")}
                       </a>
                     </li>
                     <li>
@@ -48,41 +51,16 @@ const FooterPage = (props) => {
 
               <div className="col-lg-3 col-md-6">
                 <div className="widget widget_services">
-                  <h3 className="widget-title">Useful links</h3>
+                  <h3 className="widget-title">{t("footer.usefulLinks")}</h3>
                   <ul>
                     <li>
                       <Link style={{ color: "#999" }} to="/about">
-                        About Us
+                        {t("navigationMenu.aboutUs")}
                       </Link>
                     </li>
                     <li>
                       <Link style={{ color: "#999" }} to="/contactus">
-                        Contact Us
-                      </Link>
-                    </li>
-                    {/* <li>
-                      <Link to="/our-prices">Pricing Plan</Link>
-                    </li>
-                    <li>
-                      <Link to="/faq">FAQ</Link>
-                    </li>
-                    <li>
-                      <Link to="/our-team">Our Team</Link>
-                    </li>
-                    <li>
-                      <Link to="/services">Services</Link>
-                    </li> */}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-6">
-                <div className="widget widget_services">
-                  <h3 className="widget-title">Contact Us</h3>
-                  <ul>
-                    <li>
-                      <Link style={{ color: "#999" }} to="/contactus">
-                        Contact Us
+                        {t("navigationMenu.contactUs")}
                       </Link>
                     </li>
                   </ul>
@@ -91,11 +69,71 @@ const FooterPage = (props) => {
 
               <div className="col-lg-3 col-md-6">
                 <div className="widget widget_services">
-                  <h3 className="widget-title">About Us</h3>
+                  <h3 className="widget-title">{t("footer.services")}</h3>
                   <ul>
                     <li>
-                      <Link style={{ color: "#999" }} to="/about">
-                        About Us
+                      <Link
+                        style={{ color: "#999" }}
+                        to="/computer-network-services"
+                      >
+                        {t("home.services.network")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/pabx">
+                        {t("home.services.pabx")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/smart-home">
+                        {t("home.services.home")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/e-marketing">
+                        {t("home.services.marketing")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/programming">
+                        {t("home.services.programming")}
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6">
+                <div className="widget widget_services">
+                  <h3 className="widget-title">{t("footer.services")}</h3>
+                  <ul>
+                    <li>
+                      <Link
+                        style={{ color: "#999" }}
+                        to="/accounting-programming"
+                      >
+                        {t("accProgramming.title")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/health-programming">
+                        {t("healthProgramming.title")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        style={{ color: "#999" }}
+                        to="/surveillance-cameras"
+                      >
+                        {t("home.services.supply")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        style={{ color: "#999" }}
+                        to="/computer-maintenance"
+                      >
+                        {t("home.services.maintenance")}
                       </Link>
                     </li>
                   </ul>
@@ -118,7 +156,7 @@ const FooterPage = (props) => {
 
               <ul className="copyrights-nav">
                 <li>
-                  <Link to="/contactus">Contact Us</Link>
+                  <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
                 </li>
               </ul>
             </div>

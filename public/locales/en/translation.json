@@ -13,6 +13,32 @@
       "planning": "Planning & Construction Operations",
       "performance": "How the performance indicator works for all employees",
       "customerSatisfaction": "Measuring Customer Satisfaction"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "mini": "Local & Global Success",
+      "description": "We aspire to be the best in the field in the local market, to be one of the locally successful companies, and to reach a global level in providing services of the highest quality and professionalism."
+    },
+    "message": {
+      "title": "Our Message",
+      "mini": "Culture Of Quality",
+      "description": "Our mission lies in harmonizing and spreading the culture of quality in its true concept in the field of computer and technology in the Kingdom of Saudi Arabia, in order to create real competition between all institutions and companies that provide the same service, whether they are large institutions and companies or start-ups, and this message that we adopt is in order to provide the best services at appropriate costs."
+    },
+    "target": {
+      "title": "Our Target",
+      "mini": "Strong & Large Network",
+      "description": "We have a strong goal of building a strong and large network of long-term relationships with our customers in the Kingdom of Saudi Arabia, and we are making all our efforts to achieve this goal to meet the aspirations and needs of our current and future customers."
+    },
+    "services": {
+      "title": "Our Services",
+      "mini": "Different Technologies",
+      "network": "Wired & Wireless Computer Network Services",
+      "pabx": "Supply Installation & Maintenance Of PABX",
+      "home": "Smart Home Implementation Services",
+      "marketing": "Digital Marketing",
+      "programming": "Programming",
+      "supply": "Supply & Installation Of Surveillance Cameras",
+      "maintenance": "Computer Maintenance"
     }
   },
   "navigationMenu": {
@@ -32,8 +58,10 @@
       "phone": "Phone",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send us a message"
-    }
+      "send": "Send us a message",
+      "address": "Address"
+    },
+    "fullInfo": "Our Full Info"
   },
   "computerNetworkServices": {
     "title": "Wired & Wireless Computer Network Services",
@@ -279,5 +307,11 @@
       "recovery": "Data Recovery",
       "consultations": "Installation & Modernization Consultations"
     }
+  },
+  "footer": {
+    "getInTouch": "Get in Touch",
+    "address": "60th Street, Riyadh, KSA",
+    "usefulLinks": "Useful Links",
+    "services": "Services"
   }
 }
