@@ -58,8 +58,10 @@
       "phone": "Phone",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send us a message"
-    }
+      "send": "Send us a message",
+      "address": "Address"
+    },
+    "fullInfo": "Our Full Info"
   },
   "computerNetworkServices": {
     "title": "Wired & Wireless Computer Network Services",
