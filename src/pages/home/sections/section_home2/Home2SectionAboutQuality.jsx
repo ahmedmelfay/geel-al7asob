@@ -9,7 +9,10 @@ const Home2SectionAboutQuality = (props) => {
   return (
     <>
       {/*<!-- ViDEO SECTION START -->*/}
-      <div className="section-full bg-red p-t80 p-b50">
+      <div
+        className="section-full p-t80 p-b50"
+        style={{ backgroundColor: "#faa61a" }}
+      >
         <div className="container">
           <div className="section-content">
             <div className="row justify-content-center align-items-center video-style2-outer">

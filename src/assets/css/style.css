@@ -5091,10 +5091,10 @@ ol.list-num-count.list-outline-none > li:before {
   color: #fff;
 }
 .wt-breadcrumb li a:hover {
-  color: #1a1a1a;
+  color: #faa61a;
 }
 .wt-breadcrumb li:last-child {
-  color: #1a1a1a;
+  color: #faa61a;
 }
 .wt-breadcrumb li:first-child a i {
   font-size: 18px;
@@ -8946,7 +8946,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .wt-bnr-inr-entry .banner-title-outer .banner-title-name {
-  background-color: #1a1a1a;
+  background-color: #faa61a;
   display: inline-block;
   padding: 20px;
   margin-bottom: 15px;
@@ -9354,7 +9354,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .footer-dark .footer-middle .footer-middle-content {
-  background-color: #000;
+  background-color: #1d1b18;
   display: flex;
   padding: 20px;
   justify-content: space-between;
@@ -11011,7 +11011,7 @@ ol.commentlist li::after {
 .slider-block-red:before {
   content: "";
   position: absolute;
-  background-color: #d3222a;
+  background-color: #faa61a;
   left: -25px;
   top: -25px;
   right: 0px;
