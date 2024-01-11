@@ -43,7 +43,7 @@ const ServicesSectionAllServices = (props) => {
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-8"></i>
+                        <i className="flaticon-premium"></i>
                       </span>
                     </div>
                   </div>
@@ -119,7 +119,7 @@ const ServicesSectionAllServices = (props) => {
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-2"></i>
+                        <i className="flaticon-shield"></i>
                       </span>
                     </div>
                   </div>

@@ -47,7 +47,7 @@ const AboutSectionAbout = (props) => {
                         }}
                       >
                         <i
-                          className="flaticon-drone-7"
+                          className="flaticon-worker"
                           style={{ left: "unset" }}
                         ></i>
                         <p style={{ marginInlineStart: "50px" }}>
@@ -73,7 +73,7 @@ const AboutSectionAbout = (props) => {
                         }}
                       >
                         <i
-                          className="flaticon-control"
+                          className="flaticon-power-supply"
                           style={{ left: "unset" }}
                         ></i>
                         <p style={{ marginInlineStart: "50px" }}>
@@ -129,7 +129,7 @@ const AboutSectionAbout = (props) => {
                         }}
                       >
                         <i
-                          className="flaticon-remote-control-1"
+                          className="flaticon-worker"
                           style={{ left: "unset" }}
                         ></i>
                         <p style={{ marginInlineStart: "50px" }}>
@@ -142,7 +142,7 @@ const AboutSectionAbout = (props) => {
                         }}
                       >
                         <i
-                          className="flaticon-control"
+                          className="flaticon-heart"
                           style={{ left: "unset" }}
                         ></i>
                         <p style={{ marginInlineStart: "50px" }}>

@@ -41,7 +41,7 @@ const PabxAllServices = (props) => {
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-8"></i>
+                        <i className="flaticon-chain-links"></i>
                       </span>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ const PabxAllServices = (props) => {
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-2"></i>
+                        <i className="flaticon-quality"></i>
                       </span>
                     </div>
                   </div>
