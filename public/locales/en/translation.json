@@ -313,5 +313,11 @@
     "address": "60th Street, Riyadh, KSA",
     "usefulLinks": "Useful Links",
     "services": "Services"
+  },
+  "error": {
+    "title": "Error",
+    "message": "Oops! Looks like the page is gone.",
+    "description": "We're sorry but we can't seem to find the page you requested. This might be because you have typed the web address incorrectly.",
+    "home": "GO TO HOME"
   }
 }
