@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ProgrammingBusinessGallery from "./components/ProgrammingBusinessGallery";
 var programming_business = require("../../../../assets/images/Programming/3.jpg");
 
 const ProgrammingBusiness = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title =
+      i18n.language === "ar" ? "الخدمات | جيل الحاسوب" : "Hasoup | Services";
+  });
 
   return (
     <>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const ServicesSectionAllServices = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -11,8 +11,15 @@ const ServicesSectionAllServices = (props) => {
       <div className="section-full p-t80 p-b40 bg-no-repeat bg-bottom-right bg-cover">
         <div className="container">
           {/*<!-- TITLE START-->*/}
-          <div className="section-head left wt-small-separator-outer">
-            <div className="wt-small-separator site-text-primary">
+          <div
+            className={`${
+              i18n.language === "en" ? "left" : "right"
+            } section-head wt-small-separator-outer`}
+          >
+            <div
+              className="wt-small-separator site-text-primary"
+              style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+            >
               <div className="sep-leaf-left"></div>
               <div>
                 {t("computerNetworkServices.allServiceSection.theBest")}
@@ -24,13 +31,19 @@ const ServicesSectionAllServices = (props) => {
           {/*<!-- TITLE END-->*/}
 
           <div className="section-content">
-            <div className="row justify-content-center d-flex">
+            <div
+              className="row justify-content-center d-flex"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="wt-box d-icon-box-one bg-white shadow card1">
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-8"></i>
+                        <i className="flaticon-premium"></i>
                       </span>
                     </div>
                   </div>
@@ -51,7 +64,11 @@ const ServicesSectionAllServices = (props) => {
                     </p>
                     <Link
                       to="network-design"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>
@@ -85,7 +102,11 @@ const ServicesSectionAllServices = (props) => {
                     </p>
                     <Link
                       to="network-installation-and-configuration"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>
@@ -98,7 +119,7 @@ const ServicesSectionAllServices = (props) => {
                   <div className="wt-icon-box-wraper m-b40">
                     <div className="icon-xl inline-icon">
                       <span className="icon-cell site-text-primary">
-                        <i className="flaticon-drone-2"></i>
+                        <i className="flaticon-shield"></i>
                       </span>
                     </div>
                   </div>
@@ -119,7 +140,11 @@ const ServicesSectionAllServices = (props) => {
                     </p>
                     <Link
                       to="security-and-protection"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>

@@ -12,7 +12,12 @@ const HomeSectionAbout = (props) => {
         <div className="about-section-one">
           <div className="container">
             <div className="section-content">
-              <div className="row justify-content-center d-flex align-items-center">
+              <div
+                className="row justify-content-center d-flex align-items-center"
+                style={{
+                  direction: i18n.language === "ar" ? "rtl" : "ltr",
+                }}
+              >
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="about-drone-one">
                     <div className="about-drone-one-media">
@@ -35,7 +40,11 @@ const HomeSectionAbout = (props) => {
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="about-section-one-right">
                     {/* <!-- TITLE START--> */}
-                    <div className="left wt-small-separator-outer">
+                    <div
+                      className={`${
+                        i18n.language === "en" ? "left" : "right"
+                      } wt-small-separator-outer`}
+                    >
                       <div className="wt-small-separator site-text-primary">
                         <div className="sep-leaf-left"></div>
                         <div>{t("home.message.mini")}</div>

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 var logolight = require("../../assets/images/logo-light.png");
 
 const FooterPage = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -14,15 +14,27 @@ const FooterPage = (props) => {
         {/* <!--FOOTER BLOCKES START --> */}
         <div className="footer-top">
           <div className="container">
-            <div className="row">
+            <div
+              className="row"
+              style={{
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+                textAlign: i18n.language === "ar" ? "right" : "left",
+              }}
+            >
               <div className="col-lg-3 col-md-6">
                 <div className="widget recent-posts-entry">
                   <h3 className="widget-title">{t("footer.getInTouch")}</h3>
                   <ul className="widget_address">
                     <li>
-                      <i className="fa fa-map-marker"></i>
+                      <i
+                        className="fa fa-map-marker"
+                        style={{
+                          color: "rgb(250, 166, 26)",
+                          marginInlineStart: "4px",
+                        }}
+                      ></i>
                       <a
-                        style={{ color: "#999" }}
+                        style={{ color: "#999", marginInlineStart: "23px" }}
                         href="https://maps.app.goo.gl/g1QySQdK9ZHcp5U38"
                         target="_blank"
                         rel="noreferrer"
@@ -31,37 +43,37 @@ const FooterPage = (props) => {
                       </a>
                     </li>
                     <li>
-                      <i className="fa fa-envelope"></i>
+                      <i
+                        className="fa fa-envelope"
+                        style={{
+                          color: "rgb(250, 166, 26)",
+                        }}
+                      ></i>
                       <a
-                        style={{ color: "#999" }}
+                        style={{ color: "#999", marginInlineStart: "23px" }}
                         href="mailto:batayeb@Jeelalhasuop.com"
                       >
                         batayeb@Jeelalhasuop.com
                       </a>
                     </li>
                     <li>
-                      <i className="fa fa-phone"></i>
-                      <a style={{ color: "#999" }} href="tel:+966503560334">
-                        (+966) 50-356-0334
+                      <i
+                        className="fa fa-phone"
+                        style={{
+                          color: "rgb(250, 166, 26)",
+                        }}
+                      ></i>
+                      <a
+                        style={{
+                          color: "#999",
+                          marginInlineStart: "23px",
+                        }}
+                        href="tel:+966503560334"
+                      >
+                        {i18n.language === "ar"
+                          ? "50-356-0334 (966+)"
+                          : "(+966) 50-356-0334"}
                       </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-6">
-                <div className="widget widget_services">
-                  <h3 className="widget-title">{t("footer.usefulLinks")}</h3>
-                  <ul>
-                    <li>
-                      <Link style={{ color: "#999" }} to="/about">
-                        {t("navigationMenu.aboutUs")}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link style={{ color: "#999" }} to="/contactus">
-                        {t("navigationMenu.contactUs")}
-                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -139,6 +151,24 @@ const FooterPage = (props) => {
                   </ul>
                 </div>
               </div>
+
+              <div className="col-lg-3 col-md-6">
+                <div className="widget widget_services">
+                  <h3 className="widget-title">{t("footer.usefulLinks")}</h3>
+                  <ul>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/about">
+                        {t("navigationMenu.aboutUs")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link style={{ color: "#999" }} to="/contactus">
+                        {t("navigationMenu.contactUs")}
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +197,7 @@ const FooterPage = (props) => {
             <div className="wt-footer-bot-left d-flex justify-content-center">
               <span className="copyrights-text">
                 &copy; {new Date().getFullYear()} Geel AL-Hassob. Designed By
-                <span className="site-text-primary"> Taliamedia</span>
+                <span style={{ color: "rgb(250, 166, 26)" }}> Taliamedia</span>
               </span>
             </div>
           </div>

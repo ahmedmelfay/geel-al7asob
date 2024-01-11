@@ -31,7 +31,14 @@ const ProgrammingPage = (props) => {
             {/* <!-- BREADCRUMB ROW --> */}
 
             <div>
-              <ul className="wt-breadcrumb breadcrumb-style-2">
+              <ul
+                className={`wt-breadcrumb ${
+                  i18n.language === "ar"
+                    ? "breadcrumb-style-2-ar"
+                    : "breadcrumb-style-2"
+                }`}
+                style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+              >
                 <li>
                   <Link to="/">{t("navigationMenu.home")}</Link>
                 </li>
@@ -46,7 +53,13 @@ const ProgrammingPage = (props) => {
       </div>
       {/* <!-- INNER PAGE BANNER END --> */}
 
-      <div className="section-full p-t80">
+      <div
+        className="section-full p-t80"
+        style={{
+          textAlign: i18n.language === "ar" ? "right" : "left",
+          direction: i18n.language === "ar" ? "rtl" : "ltr",
+        }}
+      >
         <div className="section-content">
           <div className="container">
             <div className="wt-box services-etc m-b30">

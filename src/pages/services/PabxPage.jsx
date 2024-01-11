@@ -33,7 +33,14 @@ const PabxPage = (props) => {
             {/* <!-- BREADCRUMB ROW --> */}
 
             <div>
-              <ul className="wt-breadcrumb breadcrumb-style-2">
+              <ul
+                className={`wt-breadcrumb ${
+                  i18n.language === "ar"
+                    ? "breadcrumb-style-2-ar"
+                    : "breadcrumb-style-2"
+                }`}
+                style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+              >
                 <li>
                   <Link to="/">{t("navigationMenu.home")}</Link>
                 </li>

@@ -10,7 +10,7 @@ var six = require("../../../../assets/images/blog/default/thumb/9.jpg");
 var seven = require("../../../../assets/images/blog/default/thumb/10.jpg");
 
 const Home4SectionOurBlog = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -18,10 +18,19 @@ const Home4SectionOurBlog = (props) => {
       <div className="section-full  p-t80 p-b50   bg-gray">
         <div className="container">
           <div className="wt-separator-two-part">
-            <div className="row wt-separator-two-part-row">
+            <div
+              className="row wt-separator-two-part-row"
+              style={{
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
                 {/* <!-- TITLE START-->*/}
-                <div className="section-head left wt-small-separator-outer">
+                <div
+                  className={`${
+                    i18n.language === "en" ? "left" : "right"
+                  } section-head wt-small-separator-outer`}
+                >
                   <div className="wt-small-separator site-text-primary">
                     <div className="sep-leaf-left"></div>
                     <div>{t("home.services.mini")}</div>
@@ -34,7 +43,13 @@ const Home4SectionOurBlog = (props) => {
             </div>
           </div>
 
-          <div className="section-content">
+          <div
+            className="section-content"
+            style={{
+              direction: i18n.language === "ar" ? "rtl" : "ltr",
+              textAlign: i18n.language === "ar" ? "right" : "left",
+            }}
+          >
             <div className="row d-flex justify-content-center">
               <div className="col-lg-4 col-md-6 col-sm-12 m-b30">
                 {/* <!--Block one-->*/}
@@ -50,10 +65,14 @@ const Home4SectionOurBlog = (props) => {
                         {t("home.services.network")}
                       </h3>
                     </div>
-                    <div className="wt-post-readmore ">
+                    <div className="wt-post-readmore">
                       <Link
                         to="/computer-network-services"
-                        className="site-button-link black"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
                       >
                         {t("readMore")}
                       </Link>
@@ -75,7 +94,14 @@ const Home4SectionOurBlog = (props) => {
                       <h3 className="post-title">{t("home.services.pabx")}</h3>
                     </div>
                     <div className="wt-post-readmore ">
-                      <Link to="/pabx" className="site-button-link black">
+                      <Link
+                        to="/pabx"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
+                      >
                         {t("readMore")}
                       </Link>
                     </div>
@@ -96,7 +122,14 @@ const Home4SectionOurBlog = (props) => {
                       <h3 className="post-title">{t("home.services.home")}</h3>
                     </div>
                     <div className="wt-post-readmore ">
-                      <Link to="/smart-home" className="site-button-link black">
+                      <Link
+                        to="/smart-home"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
+                      >
                         {t("readMore")}
                       </Link>
                     </div>
@@ -121,7 +154,11 @@ const Home4SectionOurBlog = (props) => {
                     <div className="wt-post-readmore ">
                       <Link
                         to="/e-marketing"
-                        className="site-button-link black"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
                       >
                         {t("readMore")}
                       </Link>
@@ -147,7 +184,11 @@ const Home4SectionOurBlog = (props) => {
                     <div className="wt-post-readmore ">
                       <Link
                         to="/programming"
-                        className="site-button-link black"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
                       >
                         {t("readMore")}
                       </Link>
@@ -173,7 +214,11 @@ const Home4SectionOurBlog = (props) => {
                     <div className="wt-post-readmore ">
                       <Link
                         to="/surveillance-cameras"
-                        className="site-button-link black"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
                       >
                         {t("readMore")}
                       </Link>
@@ -199,7 +244,11 @@ const Home4SectionOurBlog = (props) => {
                     <div className="wt-post-readmore ">
                       <Link
                         to="/computer-maintenance"
-                        className="site-button-link black"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } black`}
                       >
                         {t("readMore")}
                       </Link>

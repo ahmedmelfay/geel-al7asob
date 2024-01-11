@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect((props) => {
     function loadScript(src) {
@@ -28,7 +28,13 @@ const Navigation = () => {
     <>
       {/*<!-- MAIN Vav -->*/}
       <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
-        <ul className="nav navbar-nav">
+        <ul
+          className="nav navbar-nav"
+          style={{
+            direction: i18n.language === "ar" ? "rtl" : "ltr",
+            marginLeft: "70px",
+          }}
+        >
           <li>
             <Link to="/">{t("navigationMenu.home")}</Link>
           </li>

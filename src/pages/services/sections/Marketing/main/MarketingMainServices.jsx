@@ -8,7 +8,7 @@ var pic4 = require("../../../../../assets/images/Marketing/5.jpg");
 var pic5 = require("../../../../../assets/images/Marketing/6.jpg");
 
 const MarketingMainServices = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -19,10 +19,19 @@ const MarketingMainServices = (props) => {
 
           <div className="wt-separator-two-part">
             <div className="row wt-separator-two-part-row">
-              <div className="col-lg-5 col-md-6 wt-separator-two-part-left">
+              <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
                 {/* <!-- TITLE START-->*/}
-                <div className="section-head left wt-small-separator-outer">
-                  <div className="wt-small-separator site-text-primary">
+                <div
+                  className={`${
+                    i18n.language === "en" ? "left" : "right"
+                  } section-head wt-small-separator-outer`}
+                >
+                  <div
+                    className="wt-small-separator site-text-primary"
+                    style={{
+                      direction: i18n.language === "ar" ? "rtl" : "ltr",
+                    }}
+                  >
                     <div className="sep-leaf-left"></div>
                     <div>{t("marketing.mainServiceSection.all")}</div>
                     <div className="sep-leaf-right"></div>
@@ -37,7 +46,13 @@ const MarketingMainServices = (props) => {
           {/* <!-- TITLE END-->*/}
 
           <div className="section-content">
-            <div className="row justify-content-center d-flex">
+            <div
+              className="row justify-content-center d-flex"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="imghvr-zoom-out-down grayscale-img">
                   <img src={pic1} alt="" />
@@ -53,7 +68,11 @@ const MarketingMainServices = (props) => {
                       </p>
                       <Link
                         to="social-media-advertising"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -73,7 +92,11 @@ const MarketingMainServices = (props) => {
                       <p>{t("marketing.mainServiceSection.seo.description")}</p>
                       <Link
                         to="seo"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -93,7 +116,11 @@ const MarketingMainServices = (props) => {
                       <p>{t("marketing.mainServiceSection.sem.description")}</p>
                       <Link
                         to="sem"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -119,7 +146,11 @@ const MarketingMainServices = (props) => {
                       </p>
                       <Link
                         to="content-management"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -143,7 +174,11 @@ const MarketingMainServices = (props) => {
                       </p>
                       <Link
                         to="analytics-and-reports"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
