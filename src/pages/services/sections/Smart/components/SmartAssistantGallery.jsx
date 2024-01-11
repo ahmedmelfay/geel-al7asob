@@ -14,7 +14,13 @@ const SmartAssistantGallery = (props) => {
           <div className="container">
             <GalleryLargeSlider Images={ImagesLargeSliderSmart} />
 
-            <div className="wt-box services-etc m-b30">
+            <div
+              className="wt-box services-etc m-b30"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="wt-info">
                 <h3 className="wt-title">
                   {t("smart.mainServiceSection.personalAssistants.title")}

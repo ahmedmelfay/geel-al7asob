@@ -4,18 +4,25 @@ import { useTranslation } from "react-i18next";
 var video2 = require("../../../../assets/images/video-3.jpg");
 
 const Home2SectionAboutQuality = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
       {/*<!-- ViDEO SECTION START -->*/}
       <div
         className="section-full p-t80 p-b50"
-        style={{ backgroundColor: "#faa61a" }}
+        style={{
+          backgroundColor: "#faa61a",
+        }}
       >
         <div className="container">
           <div className="section-content">
-            <div className="row justify-content-center align-items-center video-style2-outer">
+            <div
+              className="row justify-content-center align-items-center video-style2-outer"
+              style={{
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-6 col-md-12  m-b30">
                 <div className="video-style2-left">
                   <div className="video-style2-circle-outer">
@@ -34,7 +41,11 @@ const Home2SectionAboutQuality = (props) => {
               <div className="col-lg-6 col-md-12 ">
                 <div className="video-style2-right">
                   {/*<!-- TITLE START-->*/}
-                  <div className="left wt-small-separator-outer text-white">
+                  <div
+                    className={`${
+                      i18n.language === "en" ? "left" : "right"
+                    } wt-small-separator-outer text-white`}
+                  >
                     <div className="wt-small-separator text-white">
                       <div className="sep-leaf-left"></div>
                       <div>{t("home.vision.mini")}</div>

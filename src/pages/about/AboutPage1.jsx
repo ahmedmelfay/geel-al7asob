@@ -26,15 +26,22 @@ const AboutPage1 = (props) => {
             <div className="banner-title-outer">
               <div className="banner-title-name">
                 <h2 className="site-text-white">
-                  {t("navigationMenu.contactUs")}
+                  {t("navigationMenu.aboutUs")}
                 </h2>
               </div>
             </div>
-            <ul className="wt-breadcrumb breadcrumb-style-2">
+            <ul
+              className={`wt-breadcrumb ${
+                i18n.language === "ar"
+                  ? "breadcrumb-style-2-ar"
+                  : "breadcrumb-style-2"
+              }`}
+              style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+            >
               <li>
                 <Link to="/">{t("navigationMenu.home")}</Link>
               </li>
-              <li>{t("navigationMenu.contactUs")}</li>
+              <li>{t("navigationMenu.aboutUs")}</li>
             </ul>
           </div>
         </div>

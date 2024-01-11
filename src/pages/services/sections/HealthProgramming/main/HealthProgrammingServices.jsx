@@ -19,8 +19,17 @@ const HealthProgrammingServices = (props) => {
             <div className="row wt-separator-two-part-row">
               <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
                 {/*<!-- TITLE START--> */}
-                <div className="section-head left wt-small-separator-outer">
-                  <div className="wt-small-separator site-text-primary">
+                <div
+                  className={`${
+                    i18n.language === "en" ? "left" : "right"
+                  } section-head wt-small-separator-outer`}
+                >
+                  <div
+                    className="wt-small-separator site-text-primary"
+                    style={{
+                      direction: i18n.language === "ar" ? "rtl" : "ltr",
+                    }}
+                  >
                     <div className="sep-leaf-left"></div>
                     <div>
                       {t("healthProgramming.allServiceSection.theBest")}
@@ -38,7 +47,13 @@ const HealthProgrammingServices = (props) => {
 
           <div className="section-content">
             <div className="services-style-two">
-              <div className="row no-gutters">
+              <div
+                className="row no-gutters"
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left",
+                  direction: i18n.language === "ar" ? "rtl" : "ltr",
+                }}
+              >
                 <div className="col-lg-6 col-md-12">
                   <div className="wt-media our-story-pic">
                     <img src={pic1} alt="" />
@@ -51,7 +66,11 @@ const HealthProgrammingServices = (props) => {
                     </h3>
                     <Link
                       to="his-hospital-program"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>
@@ -59,7 +78,13 @@ const HealthProgrammingServices = (props) => {
                 </div>
               </div>
 
-              <div className="row no-gutters">
+              <div
+                className="row no-gutters"
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left",
+                  direction: i18n.language === "ar" ? "rtl" : "ltr",
+                }}
+              >
                 <div className="col-lg-6 col-md-12">
                   <div className="wt-media our-story-pic">
                     <img src={pic2} alt="" />
@@ -92,7 +117,13 @@ const HealthProgrammingServices = (props) => {
                 </div>
               </div>
 
-              <div className="row no-gutters">
+              <div
+                className="row no-gutters"
+                style={{
+                  textAlign: i18n.language === "ar" ? "right" : "left",
+                  direction: i18n.language === "ar" ? "rtl" : "ltr",
+                }}
+              >
                 <div className="col-lg-6 col-md-12">
                   <div className="wt-media our-story-pic">
                     <img src={pic3} alt="" />

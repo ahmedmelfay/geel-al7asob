@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 var drone2 = require("../../../../assets/images/how-it-work/drone-4.png");
 
 const Home2SectionHowItWork = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -22,8 +22,15 @@ const Home2SectionHowItWork = (props) => {
           </div>
           {/* <!-- TITLE END--> */}
 
-          <div className="section-content">
-            <div className="row justify-content-center d-flex how-it-drone3">
+          <div
+            className="section-content"
+            style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+          >
+            <div
+              className={`row justify-content-center d-flex how-it-drone3 ${
+                i18n.language === "ar" && "flex-row-reverse"
+              }`}
+            >
               <div className="col-lg-4 col-md-12 m-b30 how-it-drone3-left">
                 <div className="wt-box d-icon-box-two m-b40">
                   <div className="wt-icon-box-wraper right ">

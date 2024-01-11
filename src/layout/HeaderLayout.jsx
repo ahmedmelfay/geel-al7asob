@@ -68,7 +68,7 @@ const HeaderLayout = () => {
         ? logo_black
         : logo_white;
     useEffect((props) => {
-      document.title = "Dronza Templete | " + loc + " Style";
+      document.title = "Hasoup | " + loc + " Style";
     });
     return <img src={imgRef.imgLogo} alt="Dronza" />;
   }
@@ -108,7 +108,7 @@ const HeaderLayout = () => {
           enableMobileMenu ? " active " : ""
         } ${state ? " dark-menu " : ""}`}
       >
-        <div className="sticky-header main-bar-wraper  navbar-expand-lg">
+        <div className="sticky-header main-bar-wraper navbar-expand-lg">
           <div className="main-bar">
             <div className="container clearfix">
               {/*<!-- SITE logo -->*/}
@@ -139,9 +139,13 @@ const HeaderLayout = () => {
                 <div className="extra-cell">
                   <button
                     className="header-nav-request"
-                    style={{ background: "none", border: "none" }}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "rgb(250, 166, 26)",
+                    }}
                     onClick={() => {
-                      i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar");
+                      i18n.changeLanguage(i18n.language === "en" ? "ar" : "en");
                       window.location.reload();
                     }}
                   >
@@ -149,7 +153,11 @@ const HeaderLayout = () => {
                   </button>
                 </div>
                 <div className="extra-cell">
-                  <a className="header-nav-request" href="tel:+966503560334">
+                  <a
+                    className="header-nav-request"
+                    href="tel:+966503560334"
+                    style={{ color: "rgb(250, 166, 26)" }}
+                  >
                     (+966) 50-356-0334
                   </a>
                 </div>

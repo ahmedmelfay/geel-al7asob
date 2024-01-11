@@ -4,7 +4,7 @@ import ImagesLargeSlider from "../../../../../data/ImagesLargeSlider";
 import { useTranslation } from "react-i18next";
 
 const NetworkInstallationGallery = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -14,7 +14,13 @@ const NetworkInstallationGallery = (props) => {
           <div className="container">
             <GalleryLargeSlider Images={ImagesLargeSlider} />
 
-            <div className="wt-box services-etc m-b30">
+            <div
+              className="wt-box services-etc m-b30"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="wt-info">
                 <h3 className="wt-title">
                   {t(

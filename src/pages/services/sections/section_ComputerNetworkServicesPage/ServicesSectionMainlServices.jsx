@@ -8,7 +8,7 @@ var pic4 = require("../../../../assets/images/ComputerNetworkServices/5.webp");
 var pic5 = require("../../../../assets/images/ComputerNetworkServices/6.webp");
 
 const ServicesSectionMainServices = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -21,8 +21,17 @@ const ServicesSectionMainServices = (props) => {
             <div className="row wt-separator-two-part-row">
               <div className="col-lg-12 col-md-12 wt-separator-two-part-left">
                 {/* <!-- TITLE START-->*/}
-                <div className="section-head left wt-small-separator-outer">
-                  <div className="wt-small-separator site-text-primary">
+                <div
+                  className={`${
+                    i18n.language === "en" ? "left" : "right"
+                  } section-head wt-small-separator-outer`}
+                >
+                  <div
+                    className="wt-small-separator site-text-primary"
+                    style={{
+                      direction: i18n.language === "ar" ? "rtl" : "ltr",
+                    }}
+                  >
                     <div className="sep-leaf-left"></div>
                     <div>
                       {t("computerNetworkServices.mainServiceSection.all")}
@@ -47,7 +56,13 @@ const ServicesSectionMainServices = (props) => {
           {/* <!-- TITLE END-->*/}
 
           <div className="section-content">
-            <div className="row justify-content-center d-flex">
+            <div
+              className="row justify-content-center d-flex"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="imghvr-zoom-out-down grayscale-img">
                   <img src={pic1} alt="" />
@@ -65,7 +80,11 @@ const ServicesSectionMainServices = (props) => {
                       </p>
                       <Link
                         to="network-design"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -91,7 +110,11 @@ const ServicesSectionMainServices = (props) => {
                       </p>
                       <Link
                         to="network-installation-and-configuration"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -117,7 +140,11 @@ const ServicesSectionMainServices = (props) => {
                       </p>
                       <Link
                         to="security-and-protection"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -143,7 +170,11 @@ const ServicesSectionMainServices = (props) => {
                       </p>
                       <Link
                         to="maintenance-and-support"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>
@@ -169,7 +200,11 @@ const ServicesSectionMainServices = (props) => {
                       </p>
                       <Link
                         to="network-expansion"
-                        className="site-button-link site-text-primary"
+                        className={`${
+                          i18n.language === "ar"
+                            ? "site-button-link-right"
+                            : "site-button-link"
+                        } site-text-primary`}
                       >
                         {t("readMore")}
                       </Link>

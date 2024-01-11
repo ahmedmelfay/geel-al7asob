@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const PabxAllServices = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -11,8 +11,15 @@ const PabxAllServices = (props) => {
       <div className="section-full p-t80 p-b40 bg-no-repeat bg-bottom-right bg-cover">
         <div className="container">
           {/*<!-- TITLE START-->*/}
-          <div className="section-head left wt-small-separator-outer">
-            <div className="wt-small-separator site-text-primary">
+          <div
+            className={`${
+              i18n.language === "en" ? "left" : "right"
+            } section-head wt-small-separator-outer`}
+          >
+            <div
+              className="wt-small-separator site-text-primary"
+              style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+            >
               <div className="sep-leaf-left"></div>
               <div>{t("pabx.allServiceSection.theBest")}</div>
               <div className="sep-leaf-right"></div>
@@ -22,7 +29,13 @@ const PabxAllServices = (props) => {
           {/*<!-- TITLE END-->*/}
 
           <div className="section-content">
-            <div className="row justify-content-center d-flex">
+            <div
+              className="row justify-content-center d-flex"
+              style={{
+                textAlign: i18n.language === "ar" ? "right" : "left",
+                direction: i18n.language === "ar" ? "rtl" : "ltr",
+              }}
+            >
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="wt-box d-icon-box-one bg-white shadow card1">
                   <div className="wt-icon-box-wraper m-b40">
@@ -43,7 +56,11 @@ const PabxAllServices = (props) => {
                     <p>{t("pabx.allServiceSection.supply.description")}</p>
                     <Link
                       to="supply-of-pabx"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>
@@ -73,7 +90,11 @@ const PabxAllServices = (props) => {
                     </p>
                     <Link
                       to="pabx-installation"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>
@@ -101,7 +122,11 @@ const PabxAllServices = (props) => {
                     <p>{t("pabx.allServiceSection.programming.description")}</p>
                     <Link
                       to="pabx-programming"
-                      className="site-button-link site-text-primary"
+                      className={`${
+                        i18n.language === "ar"
+                          ? "site-button-link-right"
+                          : "site-button-link"
+                      } site-text-primary`}
                     >
                       {t("readMore")}
                     </Link>

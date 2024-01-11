@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ProgrammingCloudGallery from "./components/ProgrammingCloudGallery";
 var programming_cloud = require("../../../../assets/images/Programming/2.jpg");
 
 const ProgrammingCloud = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title =
+      i18n.language === "ar" ? "الخدمات | جيل الحاسوب" : "Hasoup | Services";
+  });
 
   return (
     <>
@@ -27,7 +32,14 @@ const ProgrammingCloud = (props) => {
             {/* <!-- BREADCRUMB ROW --> */}
 
             <div>
-              <ul className="wt-breadcrumb breadcrumb-style-2">
+              <ul
+                className={`wt-breadcrumb ${
+                  i18n.language === "ar"
+                    ? "breadcrumb-style-2-ar"
+                    : "breadcrumb-style-2"
+                }`}
+                style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}
+              >
                 <li>
                   <Link to="/">{t("navigationMenu.home")}</Link>
                 </li>

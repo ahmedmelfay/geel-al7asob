@@ -2950,7 +2950,8 @@ ol.list-num-count.list-outline-none > li:before {
   color: #fff;
 }
 /* 1.32 button text link */
-.site-button-link {
+.site-button-link,
+.site-button-link-right {
   display: inline-block;
   position: relative;
   font-weight: 700;
@@ -3414,6 +3415,35 @@ ol.list-num-count.list-outline-none > li:before {
 .left .wt-small-separator div.sep-leaf-left:before {
   left: 0px;
 }
+/*right-title*/
+
+.right.wt-small-separator-outer {
+  text-align: right;
+}
+.right .wt-small-separator div.sep-leaf-right {
+  position: relative;
+  margin-right: 40px;
+  display: none;
+}
+.right .wt-small-separator div.sep-leaf-left {
+  position: relative;
+  margin-left: 40px;
+}
+.right .wt-small-separator div.sep-leaf-right:before,
+.right .wt-small-separator div.sep-leaf-left:before {
+  position: absolute;
+  content: "";
+  background-color: #1a1a1a;
+  width: 30px;
+  height: 4px;
+  bottom: 3px;
+}
+.right .wt-small-separator div.sep-leaf-right:before {
+  left: 0px;
+}
+.right .wt-small-separator div.sep-leaf-left:before {
+  right: 0px;
+}
 
 .wt-small-separator-outer
   .wt-small-separator.text-white
@@ -3440,7 +3470,9 @@ ol.list-num-count.list-outline-none > li:before {
   }
 
   .left .wt-small-separator div.sep-leaf-left,
-  .left .wt-small-separator div.sep-leaf-right {
+  .left .wt-small-separator div.sep-leaf-right,
+  .right .wt-small-separator div.sep-leaf-left,
+  .right .wt-small-separator div.sep-leaf-right {
     margin: 0px;
   }
 }
@@ -5114,6 +5146,15 @@ ol.list-num-count.list-outline-none > li:before {
   font-weight: normal;
 }
 
+.breadcrumb-style-2-ar li:after {
+  content: "\f100";
+  margin-right: 7px;
+  font-family: "FontAwesome";
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 /*-------------------------------------
 	14. Google map 
 -------------------------------------*/
@@ -6020,12 +6061,12 @@ input[type="radio"]:checked + label:before {
   margin-bottom: 20px;
   color: #999999;
   position: relative;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 
 .widget_address li i {
   position: absolute;
-  left: 0px;
+  /* left: 0px; */
   top: 5px;
   font-size: 16px;
 }
@@ -9562,12 +9603,12 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .footer-dark .widget_address li {
   margin-bottom: 24px;
   position: relative;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   font-size: 14px;
 }
 .footer-dark .widget_address li i {
   position: absolute;
-  left: 0px;
+  /* left: 0px; */
   top: 5px;
   font-size: 18px;
   color: #1a1a1a;
@@ -9659,7 +9700,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   margin-bottom: 12px;
   color: #000;
   position: relative;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
@@ -9671,7 +9712,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .footer-light .widget_address li i {
   position: absolute;
-  left: 0px;
+  /* left: 0px; */
   top: 5px;
   font-size: 18px;
 }
@@ -9799,7 +9840,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .widget_address li {
   margin-bottom: 20px;
   position: relative;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .widget.widget_about p {
@@ -11326,6 +11367,34 @@ Spin circle
 .site-button-link:hover:before {
   width: 30px;
   right: -40px;
+  background-color: #404040;
+}
+
+.site-button-link-right {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.site-button-link-right:before {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: 8px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 20px;
+  height: 2px;
+  background-color: #1a1a1a;
+}
+
+.site-button-link-right:hover:before {
+  width: 30px;
+  left: -40px;
   background-color: #404040;
 }
 
@@ -14466,7 +14535,7 @@ ol.commentlist li .star-rating {
   position: absolute;
   left: 0px;
   top: 0px;
-  border: 10px solid #d52323;
+  border: 10px solid #faa61a;
   max-width: 320px;
   width: 100%;
   bottom: 100px;

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 // var pic3 = require("../../../../assets/images/team/pic3.jpg");
 
 const AboutSectionOurTeam = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const data = [
     { title: t("home.services.network"), link: "/computer-network-services" },
@@ -29,9 +29,19 @@ const AboutSectionOurTeam = (props) => {
           <div className="section-content quality-section-outer">
             <div className="container">
               <div className="quality-section-content">
-                <div className="row justify-content-center">
+                <div
+                  className="row justify-content-center"
+                  style={{
+                    direction: i18n.language === "ar" ? "rtl" : "ltr",
+                  }}
+                >
                   {data.map((item) => (
-                    <div className="col-lg-4 col-md-6 m-b30">
+                    <div
+                      className="col-lg-4 col-md-6 m-b30"
+                      style={{
+                        textAlign: i18n.language === "ar" ? "right" : "left",
+                      }}
+                    >
                       <div className="corner-line">
                         <div
                           className="wt-box d-icon-box-one bg-white shadow"
@@ -52,7 +62,11 @@ const AboutSectionOurTeam = (props) => {
                           <div className="d-icon-box-content">
                             <Link
                               to={item.link}
-                              className="site-button-link site-text-primary"
+                              className={`${
+                                i18n.language === "ar"
+                                  ? "site-button-link-right"
+                                  : "site-button-link"
+                              } site-text-primary`}
                             >
                               {t("readMore")}
                             </Link>

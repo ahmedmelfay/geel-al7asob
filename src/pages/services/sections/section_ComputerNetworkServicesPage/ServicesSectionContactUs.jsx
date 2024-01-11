@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 var bg3 = require("../../../../assets/images/background/contact-us.jpg");
 
 const ServicesSectionContactUs = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -17,15 +17,23 @@ const ServicesSectionContactUs = (props) => {
         <div className="container">
           {/* <!-- TITLE START--> */}
           <div className="section-head center wt-small-separator-outer text-center text-white">
-            <div className="wt-small-separator site-text-primary">
+            <div className="wt-small-separator text-white site-text-primary">
               <div className="sep-leaf-left"></div>
-              <div className="text-white">{t("contactUs.title")}</div>
+              <div>{t("contactUs.title")}</div>
               <div className="sep-leaf-right"></div>
             </div>
-            <h2>{t("contactUs.description")}</h2>
+            <h2 style={{ direction: i18n.language === "ar" ? "rtl" : "ltr" }}>
+              {t("contactUs.description")}
+            </h2>
           </div>
           {/* <!-- TITLE END--> */}
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            style={{
+              textAlign: i18n.language === "ar" ? "right" : "left",
+              direction: i18n.language === "ar" ? "rtl" : "ltr",
+            }}
+          >
             <div className="col-lg-8 col-md-12">
               <div className="home-contact-section p-a50">
                 <form

@@ -3,7 +3,7 @@ import SimpleMap from "../../../common/map/SimpleMap";
 import { useTranslation } from "react-i18next";
 
 const PagesSectionContactUs = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   // const [status, setStatus] = useState("Submit");
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -48,7 +48,9 @@ const PagesSectionContactUs = (props) => {
       {/*<!-- CONTACT FORM --> */}
       <div
         className="section-full  p-t80 p-b50 bg-cover"
-        style={{ backgroundImage: "url(/assets/images/background/bg-7.jpg)" }}
+        style={{
+          backgroundImage: "url(/assets/images/background/bg-7.jpg)",
+        }}
       >
         <div className="section-content">
           <div className="container">
@@ -57,9 +59,19 @@ const PagesSectionContactUs = (props) => {
               <div className="row d-flex justify-content-center flex-wrap">
                 <div className="col-md-12 m-b30">
                   <div className="contact-info">
-                    <div className="contact-info-inner">
+                    <div
+                      className="contact-info-inner"
+                      style={{
+                        textAlign: i18n.language === "ar" ? "right" : "left",
+                      }}
+                    >
                       {/*<!-- TITLE START--> */}
-                      <div className="section-head left wt-small-separator-outer">
+                      <div
+                        className="section-head left wt-small-separator-outer"
+                        style={{
+                          textAlign: i18n.language === "ar" ? "right" : "left",
+                        }}
+                      >
                         <h3>{t("contactUs.fullInfo")}</h3>
                       </div>
                       {/*<!-- TITLE END--> */}
