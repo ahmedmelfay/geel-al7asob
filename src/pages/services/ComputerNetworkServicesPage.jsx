@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ServicesSectionAllServices from "./sections/section_ComputerNetworkServicesPage/ServicesSectionAllServices";
 import ServicesSectionMainlServices from "./sections/section_ComputerNetworkServicesPage/ServicesSectionMainlServices";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import { useTranslation } from "react-i18next";
 import NetworkParagraphAndImages from "./sections/ComputerNetworkServices/main/NetworkParagraphAndImages";
 var one = require("../../assets/images/ComputerNetworkServices/1.jpg");
@@ -103,7 +102,6 @@ const ComputerNetworkServicesPage = (props) => {
       <ServicesSectionAllServices />
       <ServicesSectionMainlServices />
       {i18n.language === "en" && <NetworkParagraphAndImages />}
-      <ServicesSectionContactUs />
     </>
   );
 };

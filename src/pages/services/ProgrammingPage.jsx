@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import ProgrammingServices from "./sections/Programming/main/ProgrammingServices";
 var one = require("../../assets/images/Programming/1.jpg");
 
@@ -102,7 +101,6 @@ const ProgrammingPage = (props) => {
       </div>
 
       <ProgrammingServices />
-      <ServicesSectionContactUs />
     </>
   );
 };

@@ -15,7 +15,7 @@ export default function SimpleMap() {
         }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.4615273436107!2d47.17921972390974!3d25.556307617060483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2de04d3f6df173%3A0xc9b8ec3c64a472bc!2z2LTYp9ix2Lkg2KfZhNiz2KrZitmGLi4g2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1704016706001!5m2!1sar!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3714.488775670502!2d39.789460999999996!3d21.410024999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI0JzM2LjEiTiAzOcKwNDcnMjIuMSJF!5e0!3m2!1sen!2seg!4v1705410394342!5m2!1sen!2seg"
           width="600"
           height="450"
           style={{ border: 0 }}

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SmartParagraphAndImages from "./sections/Smart/main/SmartParagraphAndImages";
 import SmartAllServices from "./sections/Smart/main/SmartAllServices";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import SmartMainServices from "./sections/Smart/main/SmartMainServices";
 var one = require("../../assets/images/Smart/1.jpg");
 
@@ -101,7 +100,6 @@ const SmartPage = (props) => {
       <SmartAllServices />
       <SmartMainServices />
       {i18n.language === "en" && <SmartParagraphAndImages />}
-      <ServicesSectionContactUs />
     </>
   );
 };
