@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import MarketingAllServices from "./sections/Marketing/main/MarketingAllServices";
 import MarketingMainServices from "./sections/Marketing/main/MarketingMainServices";
 import MarketingParagraphAndImages from "./sections/Marketing/main/MarketingParagraphAndImages";
@@ -114,7 +113,6 @@ const MarketingPage = (props) => {
       <MarketingAllServices />
       <MarketingMainServices />
       {i18n.language === "en" && <MarketingParagraphAndImages />}
-      <ServicesSectionContactUs />
     </>
   );
 };

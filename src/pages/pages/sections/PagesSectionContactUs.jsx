@@ -86,27 +86,13 @@ const PagesSectionContactUs = (props) => {
                         <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
                             <span className="m-t0">
-                              {t("contactUs.form.phone")}
-                            </span>
-                            <a
-                              style={{ color: "#404040" }}
-                              href="tel:+966503560334"
-                            >
-                              (+966) 50-356-0334
-                            </a>
-                          </div>
-                        </div>
-
-                        <div className="wt-icon-box-wraper left m-b30">
-                          <div className="icon-content">
-                            <span className="m-t0">
                               {t("contactUs.form.email")}
                             </span>
                             <a
                               style={{ color: "#404040" }}
-                              href="mailto:batayeb@Jeelalhasuop.com"
+                              href="mailto:contact@Jeelalhasuop.com"
                             >
-                              batayeb@Jeelalhasuop.com
+                              contact@Jeelalhasuop.com
                             </a>
                           </div>
                         </div>
@@ -118,11 +104,11 @@ const PagesSectionContactUs = (props) => {
                             </span>
                             <a
                               style={{ color: "#404040" }}
-                              href="https://maps.app.goo.gl/g1QySQdK9ZHcp5U38"
+                              href="https://maps.app.goo.gl/1ERZW931G2SBfDAT9"
                               target="_blank"
                               rel="noreferrer"
                             >
-                              60th Street, Riyadh, KSA
+                              {t("contactUs.address")}
                             </a>
                           </div>
                         </div>

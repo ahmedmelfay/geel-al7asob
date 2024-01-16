@@ -40,7 +40,7 @@
 if($_POST)
 {
    
-   $from = "info@devandainfotech.com";
+   $from = "ahmedabdelmoneam755@gmail.com";
    if(isset($_POST['username']))
    {
         $name = filter_var( $_POST['username'], FILTER_SANITIZE_STRING );

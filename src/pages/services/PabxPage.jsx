@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import { useTranslation } from "react-i18next";
 import PabxAllServices from "./sections/Pabx/main/PabxAllServices";
 import PabxMainServices from "./sections/Pabx/main/PabxMainServices";
@@ -91,7 +90,6 @@ const PabxPage = (props) => {
       <PabxAllServices />
       <PabxMainServices />
       {i18n.language === "en" && <PabxParagraphAndImages />}
-      <ServicesSectionContactUs />
     </>
   );
 };

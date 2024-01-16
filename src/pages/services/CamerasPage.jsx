@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import CamerasServices from "./sections/Cameras/main/CamerasServices";
 var one = require("../../assets/images/Cameras/1.jpg");
 
@@ -103,7 +102,6 @@ const CamerasPage = (props) => {
       </div>
 
       <CamerasServices />
-      <ServicesSectionContactUs />
     </>
   );
 };

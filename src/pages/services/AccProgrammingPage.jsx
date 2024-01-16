@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ServicesSectionContactUs from "./sections/section_ComputerNetworkServicesPage/ServicesSectionContactUs";
 import AccProgrammingServices from "./sections/AccProgramming/main/AccProgrammingServices";
 var one = require("../../assets/images/AccProgramming/1.jpg");
 
@@ -100,7 +99,6 @@ const AccProgrammingPage = (props) => {
       </div>
 
       <AccProgrammingServices />
-      <ServicesSectionContactUs />
     </>
   );
 };
