@@ -112,7 +112,11 @@ const Slider = () => {
                 <div
                   className="tp-caption   tp-resizeme home-1-change-img-slide1 "
                   id="slide-901-layer-1"
-                  data-x="['right','right','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['left','left','center','center']"
+                      : "['right','right','center','center']"
+                  }
                   data-hoffset="['-254','-100','0','0']"
                   data-y="['middle','middle','bottom','bottom']"
                   data-voffset="['-5','-5','20','20']"
@@ -121,7 +125,11 @@ const Slider = () => {
                   data-whitespace="nowrap"
                   data-type="image"
                   data-responsive_offset="on"
-                  data-frames='[{"from":"x:right;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                  data-frames={
+                    i18n.language === "ar"
+                      ? '[{"from":"x:left;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                      : '[{"from":"x:right;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                  }
                   data-textalign="['left','left','left','left']"
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
@@ -152,8 +160,12 @@ const Slider = () => {
                 <div
                   className="tp-caption   tp-resizeme"
                   id="slide-901-layer-2"
-                  data-x="['left','left','center','center']"
-                  data-hoffset="[105','145','0','0']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
+                  data-hoffset="['105','145','0','0']"
                   data-y="['top','top','top','top']"
                   data-voffset={
                     i18n.language === "ar"
@@ -171,7 +183,11 @@ const Slider = () => {
                   {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
                   {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                   ]'
-                  data-textalign="['left','left','center','center']"
+                  data-textalign={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-paddingtop="[5,5,5,5]"
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
@@ -185,7 +201,13 @@ const Slider = () => {
                     fontFamily: "'Cairo', sans-serif",
                   }}
                 >
-                  <div className="slider-block-black">
+                  <div
+                    className={
+                      i18n.language === "ar"
+                        ? "slider-block-black-ar"
+                        : "slider-block-black"
+                    }
+                  >
                     {t("home.slider.title")}
                   </div>
                 </div>
@@ -194,7 +216,11 @@ const Slider = () => {
                 <div
                   className="tp-caption  tp-resizeme"
                   id="slide-901-layer-3"
-                  data-x="['left','left','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-hoffset="['65','100','0','0']"
                   data-y="['middle','middle','middle','middle']"
                   data-voffset="['120','80','-20','-40']"
@@ -209,7 +235,11 @@ const Slider = () => {
 									{"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
 									{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
 									]'
-                  data-textalign="['left','left','center','center']"
+                  data-textalign={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
@@ -220,6 +250,7 @@ const Slider = () => {
                     color: "#fff",
                     borderWidth: "0px",
                     fontFamily: "'IBM Plex Sans Arabic', sans-serif",
+                    direction: i18n.language === "ar" ? "rtl" : "ltr",
                   }}
                 >
                   {t("home.slider.description")}
@@ -259,7 +290,11 @@ const Slider = () => {
                 <div
                   className="tp-caption"
                   id="slide-901-layer-5"
-                  data-x="['right','right','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['left','left','center','center']"
+                      : "['right','right','center','center']"
+                  }
                   data-hoffset="['0','50','0','0']"
                   data-y="['middle','middle','bottom','bottom']"
                   data-voffset="['0','0','0','0']"
@@ -372,7 +407,11 @@ const Slider = () => {
                 <div
                   className="tp-caption   tp-resizeme "
                   id="slide-902-layer-1"
-                  data-x="['right','right','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['left','left','center','center']"
+                      : "['right','right','center','center']"
+                  }
                   data-hoffset="['-254','-100','0','0']"
                   data-y="['middle','middle','bottom','bottom']"
                   data-voffset="['-5','-5','20','20']"
@@ -381,7 +420,11 @@ const Slider = () => {
                   data-whitespace="nowrap"
                   data-type="image"
                   data-responsive_offset="on"
-                  data-frames='[{"from":"x:right;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                  data-frames={
+                    i18n.language === "ar"
+                      ? '[{"from":"x:left;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                      : '[{"from":"x:right;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                  }
                   data-textalign="['left','left','left','left']"
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
@@ -412,8 +455,12 @@ const Slider = () => {
                 <div
                   className="tp-caption   tp-resizeme"
                   id="slide-902-layer-2"
-                  data-x="['left','left','center','center']"
-                  data-hoffset="[105','145','0','0']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
+                  data-hoffset="['105','145','0','0']"
                   data-y="['top','top','top','top']"
                   data-voffset={
                     i18n.language === "ar"
@@ -431,7 +478,11 @@ const Slider = () => {
                                 {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1000,"ease":"Power4.easeOut"},
                                 {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                 ]'
-                  data-textalign="['left','left','center','center']"
+                  data-textalign={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-paddingtop="[5,5,5,5]"
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
@@ -445,7 +496,13 @@ const Slider = () => {
                     fontFamily: "'Cairo', sans-serif",
                   }}
                 >
-                  <div className="slider-block-red">
+                  <div
+                    className={
+                      i18n.language === "ar"
+                        ? "slider-block-red-ar"
+                        : "slider-block-red"
+                    }
+                  >
                     {t("home.slider.title")}
                   </div>
                 </div>
@@ -454,7 +511,11 @@ const Slider = () => {
                 <div
                   className="tp-caption  tp-resizeme"
                   id="slide-902-layer-3"
-                  data-x="['left','left','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-hoffset="['65','100','0','0']"
                   data-y="['middle','middle','middle','middle']"
                   data-voffset="['120','80','-20','-40']"
@@ -469,7 +530,11 @@ const Slider = () => {
                                 {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeOut"},
                                 {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                 ]'
-                  data-textalign="['left','left','center','center']"
+                  data-textalign={
+                    i18n.language === "ar"
+                      ? "['right','right','center','center']"
+                      : "['left','left','center','center']"
+                  }
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
@@ -480,6 +545,7 @@ const Slider = () => {
                     color: "#fff",
                     borderWidth: "0px",
                     fontFamily: "'IBM Plex Sans Arabic', sans-serif",
+                    direction: i18n.language === "ar" ? "rtl" : "ltr",
                   }}
                 >
                   {t("home.slider.description")}
@@ -519,7 +585,11 @@ const Slider = () => {
                 <div
                   className="tp-caption"
                   id="slide-902-layer-5"
-                  data-x="['right','right','center','center']"
+                  data-x={
+                    i18n.language === "ar"
+                      ? "['left','left','center','center']"
+                      : "['right','right','center','center']"
+                  }
                   data-hoffset="['0','50','0','0']"
                   data-y="['middle','middle','bottom','bottom']"
                   data-voffset="['0','0','0','0']"

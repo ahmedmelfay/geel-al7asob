@@ -152,15 +152,6 @@ const HeaderLayout = () => {
                     {t("navigationMenu.language")}
                   </button>
                 </div>
-                <div className="extra-cell">
-                  <a
-                    className="header-nav-request"
-                    href="tel:+966503560334"
-                    style={{ color: "rgb(250, 166, 26)" }}
-                  >
-                    (+966) 50-356-0334
-                  </a>
-                </div>
               </div>
 
               {/*<!-- SITE Navigation -->*/}

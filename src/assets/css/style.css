@@ -11006,7 +11006,9 @@ ol.commentlist li::after {
 }
 
 .slider-block-black,
+.slider-block-black-ar,
 .slider-block-red,
+.slider-block-red-ar,
 .slider-block-blue {
   position: relative;
   z-index: 1;
@@ -11015,7 +11017,20 @@ ol.commentlist li::after {
   content: "";
   position: absolute;
   border: 16px solid rgba(255, 255, 255, 0.3);
-  left: -40px;
+  left: -30px;
+  top: -40px;
+  right: 0px;
+  bottom: -40px;
+  width: 200px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.slider-block-black-ar:after {
+  content: "";
+  position: absolute;
+  border: 16px solid rgba(255, 255, 255, 0.3);
+  left: 290px;
   top: -40px;
   right: 0px;
   bottom: -40px;
@@ -11028,7 +11043,18 @@ ol.commentlist li::after {
   content: "";
   position: absolute;
   background-color: #1a1a1a;
-  left: -25px;
+  left: -15px;
+  top: -25px;
+  right: 0px;
+  bottom: -25px;
+  width: 170px;
+  z-index: -1;
+}
+.slider-block-black-ar:before {
+  content: "";
+  position: absolute;
+  background-color: #1a1a1a;
+  left: 305px;
   top: -25px;
   right: 0px;
   bottom: -25px;
@@ -11040,7 +11066,20 @@ ol.commentlist li::after {
   content: "";
   position: absolute;
   border: 16px solid rgba(255, 255, 255, 0.3);
-  left: -40px;
+  left: -30px;
+  top: -40px;
+  right: 0px;
+  bottom: -40px;
+  width: 200px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.slider-block-red-ar:after {
+  content: "";
+  position: absolute;
+  border: 16px solid rgba(255, 255, 255, 0.3);
+  left: 290px;
   top: -40px;
   right: 0px;
   bottom: -40px;
@@ -11053,7 +11092,18 @@ ol.commentlist li::after {
   content: "";
   position: absolute;
   background-color: #faa61a;
-  left: -25px;
+  left: -15px;
+  top: -25px;
+  right: 0px;
+  bottom: -25px;
+  width: 170px;
+  z-index: -1;
+}
+.slider-block-red-ar:before {
+  content: "";
+  position: absolute;
+  background-color: #faa61a;
+  left: 305px;
   top: -25px;
   right: 0px;
   bottom: -25px;
@@ -11113,14 +11163,26 @@ ol.commentlist li::after {
   .slider-block-black:after {
     display: none;
   }
+  .slider-block-black-ar:after {
+    display: none;
+  }
   .slider-block-black:before {
+    display: none;
+  }
+  .slider-block-black-ar:before {
     display: none;
   }
 
   .slider-block-red:after {
     display: none;
   }
+  .slider-block-red-ar:after {
+    display: none;
+  }
   .slider-block-red:before {
+    display: none;
+  }
+  .slider-block-red-ar:before {
     display: none;
   }
 
