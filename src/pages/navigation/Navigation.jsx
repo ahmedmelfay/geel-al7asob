@@ -32,7 +32,7 @@ const Navigation = () => {
           className="nav navbar-nav"
           style={{
             direction: i18n.language === "ar" ? "rtl" : "ltr",
-            marginLeft: "70px",
+            marginRight: "90px",
           }}
         >
           <li>
