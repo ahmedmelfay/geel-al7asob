@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-var logolight = require("../../assets/images/logo-light.png");
+var logolight = require("../../assets/images/logo_light.png");
 
 const FooterPage = (props) => {
   const { t, i18n } = useTranslation();

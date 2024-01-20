@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo_white from "../assets/images/logo-white.png";
+import logo_light from "../assets/images/logo_light.png";
 import logo_red from "../assets/images/logo-bg-dark.png";
 import logo_black from "../assets/images/logo-dark.png";
 
@@ -55,22 +55,22 @@ const HeaderLayout = () => {
     return str.join(" ");
   }
   function MyImage() {
-    var imgRef = useRef(logo_white);
+    var imgRef = useRef(logo_light);
     var location = useLocation();
     var loc = titleCase(location.pathname.replace("/", "")).trim();
     loc = loc === "" ? (loc = "Home") : loc;
     imgRef.imgLogo =
       loc === ""
-        ? logo_white
+        ? logo_light
         : loc === "Home2"
         ? logo_red
         : loc === "Home3"
         ? logo_black
-        : logo_white;
+        : logo_light;
     useEffect((props) => {
       document.title = "Hasoup | " + loc + " Style";
     });
-    return <img src={imgRef.imgLogo} alt="Dronza" />;
+    return <img src={imgRef.imgLogo} alt="geel-al7asob" />;
   }
 
   return (
