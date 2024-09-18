@@ -97,6 +97,7 @@ const PagesSectionContactUs = (props) => {
                           </div>
                         </div>
 
+                        {/* Address */}
                         <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
                             <span className="m-t0">
@@ -109,6 +110,29 @@ const PagesSectionContactUs = (props) => {
                               rel="noreferrer"
                             >
                               {t("contactUs.address")}
+                            </a>
+                          </div>
+                        </div>
+
+                        {/* Phones */}
+                        <div className="wt-icon-box-wraper left m-b30">
+                          <div className="icon-content">
+                            <span className="m-t0">
+                              {t("contactUs.form.phone")}
+                            </span>
+                            <a
+                              style={{ color: "#404040" }}
+                              href="tel:0508852443"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <a
+                              style={{ color: "#404040" }}
+                              href="tel:0564040029"
+                              target="_blank"
+                              rel="noreferrer"
+                            ></a>
+                              {t("contactUs.phone")}
                             </a>
                           </div>
                         </div>

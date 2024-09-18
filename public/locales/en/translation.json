@@ -62,7 +62,10 @@
       "address": "Address"
     },
     "fullInfo": "Our Full Info",
-    "address": "Abdullah Arif Street - Makkah – Al-Rusayfah - KSA"
+    "Phone" : {
+      "Phone 1" : "0508852443",
+      "Phone 2" : "0564040029"
+    }
   },
   "computerNetworkServices": {
     "title": "Wired & Wireless Computer Network Services",
