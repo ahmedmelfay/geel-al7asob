@@ -98,7 +98,7 @@ const PagesSectionContactUs = (props) => {
                         </div>
 
                         {/* Address */}
-                        <div className="wt-icon-box-wraper left m-b30">
+                        {/* <div className="wt-icon-box-wraper left m-b30">
                           <div className="icon-content">
                             <span className="m-t0">
                               {t("contactUs.form.address")}
@@ -112,7 +112,7 @@ const PagesSectionContactUs = (props) => {
                               {t("contactUs.address")}
                             </a>
                           </div>
-                        </div>
+                        </div> */}
 
                         {/* Phones */}
                         <div className="wt-icon-box-wraper left m-b30">
@@ -121,18 +121,22 @@ const PagesSectionContactUs = (props) => {
                               {t("contactUs.form.phone")}
                             </span>
                             <a
+                              className="d-block"
+                              style={{ color: "#404040" }}
+                              href="tel:0564040029"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              0564040029
+                            </a>
+                            <a
+                              className="d-block"
                               style={{ color: "#404040" }}
                               href="tel:0508852443"
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <a
-                              style={{ color: "#404040" }}
-                              href="tel:0564040029"
-                              target="_blank"
-                              rel="noreferrer"
-                            ></a>
-                              {t("contactUs.phone")}
+                              0508852443
                             </a>
                           </div>
                         </div>
