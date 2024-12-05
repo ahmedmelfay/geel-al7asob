@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // SMTP Configuration
         $mail->isSMTP();
-        $mail->Host = 'mx1-hosting.jellyfish.systems'; // Primary SMTP server
+        $mail->Host = 'business48.web-hosting.com'; // Primary SMTP server
         $mail->SMTPAuth = true;
         $mail->Username = 'batayeb@jeelalhasoup.com'; // Provided username
         $mail->Password = 'rpkY3^ykH_aU'; // Provided password
