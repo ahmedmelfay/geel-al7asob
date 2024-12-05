@@ -7,86 +7,99 @@ export default function MobileMenu() {
 
   const [isNavExpanded1, setIsNavExpanded1] = useState(false);
 
+  const itemStyles = {
+    direction: i18n.language === "ar" ? "rtl" : "ltr",
+    textAlign: i18n.language === "ar" ? "right" : "left",
+  };
+
   return (
     <>
       <div
         className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center"
         style={{
           display: "block!important",
-          right: "15px",
+          left: "15px",
           minHeight: "300px!important",
         }}
       >
         <ul className=" nav navbar-nav" style={{ height: "300px!important" }}>
-          <li>
+          <li style={itemStyles}>
             <Link to="/">{t("navigationMenu.home")}</Link>
           </li>
 
-          <li className={`has-child ${isNavExpanded1 ? "nav-active" : ""} `}>
+          <li
+            style={itemStyles}
+            className={`has-child ${isNavExpanded1 ? "nav-active" : ""} `}
+          >
             <Link>{t("navigationMenu.services")}</Link>
             <div
-              className="fa fa-angle-right submenu-toogle"
-              onClick={() => {
-                setIsNavExpanded1(!isNavExpanded1);
-              }}
+              className={`fa ${
+                i18n.language === "ar" ? "fa-angle-left" : "fa-angle-right"
+              } submenu-toogle`}
+              style={
+                i18n.language === "ar"
+                  ? { left: 4, right: "unset" }
+                  : { right: 4, left: "unset" }
+              }
+              onClick={() => setIsNavExpanded1(!isNavExpanded1)}
             ></div>
             <ul
               className="sub-menu"
               style={{ display: isNavExpanded1 ? "block" : "none" }}
             >
-              <li>
+              <li style={itemStyles}>
                 <Link to="/computer-network-services">
                   {t("computerNetworkServices.title")}
                 </Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/pabx">{t("pabx.title")}</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/smart-home">{t("smart.title")}</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/e-marketing">{t("marketing.title")}</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/programming">{t("programming.title")}</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/accounting-programming">
                   {t("accProgramming.title")}
                 </Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/health-programming">
                   {t("healthProgramming.title")}
                 </Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/surveillance-cameras">{t("cameras.title")}</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/computer-maintenance">
                   {t("computerMaintenance.title")}
                 </Link>
               </li>
-              {/* <li>
+              {/* <li style={itemStyles}>
                 <Link to="/services2">Services Two</Link>
               </li>
-              <li>
+              <li style={itemStyles}>
                 <Link to="/services-detail">Services detail</Link>
               </li> */}
             </ul>
           </li>
 
-          <li>
+          <li style={itemStyles}>
             <Link to="/about">{t("navigationMenu.aboutUs")}</Link>
           </li>
 
-          <li>
+          <li style={itemStyles}>
             <Link to="/contactus">{t("navigationMenu.contactUs")}</Link>
           </li>
 
-          <li>
+          <li style={itemStyles}>
             <Link
               onClick={() =>
                 i18n.changeLanguage(i18n.language === "ar" ? "en" : "ar")

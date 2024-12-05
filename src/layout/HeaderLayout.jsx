@@ -73,11 +73,6 @@ const HeaderLayout = () => {
     return <img src={imgRef.imgLogo} alt="geel-al7asob" />;
   }
 
-  const drawerButtinStyles = {
-    background: enableMobileMenu ? "black" : "white",
-    transition: "background 0.3s linear",
-  };
-
   return (
     <>
       <HelmetProvider context={helmetContext}>
@@ -132,26 +127,12 @@ const HeaderLayout = () => {
                 data-toggle="collapse"
                 type="button"
                 className="navbar-toggler collapsed"
-                style={{
-                  zIndex: 99999,
-                  position: "relative",
-                  marginTop: enableMobileMenu ? 4 : "",
-                }}
                 onClick={() => setEnableMenu(!enableMobileMenu)}
               >
                 <span className="sr-only">Toggle navigation</span>
-                <span
-                  className="icon-bar icon-bar-first"
-                  style={drawerButtinStyles}
-                ></span>
-                <span
-                  className="icon-bar icon-bar-two"
-                  style={drawerButtinStyles}
-                ></span>
-                <span
-                  className="icon-bar icon-bar-three"
-                  style={drawerButtinStyles}
-                ></span>
+                <span className="icon-bar icon-bar-first"></span>
+                <span className="icon-bar icon-bar-two"></span>
+                <span className="icon-bar icon-bar-three"></span>
               </button>
 
               <div className="extra-nav header-2-nav">
