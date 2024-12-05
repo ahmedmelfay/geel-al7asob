@@ -21,7 +21,7 @@ const Navigation = () => {
       });
     }
 
-    loadScript(`${process.env.PUBLIC_URL}/externaljs/js/custom.js`);
+    loadScript(`${process.env.REACT_APP_PUBLIC_URL}/externaljs/js/custom.js`);
   });
 
   return (

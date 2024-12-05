@@ -13,7 +13,7 @@ export default function MobileMenu() {
         className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center"
         style={{
           display: "block!important",
-          left: "15px",
+          right: "15px",
           minHeight: "300px!important",
         }}
       >

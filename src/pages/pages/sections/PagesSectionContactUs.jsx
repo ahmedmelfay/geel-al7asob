@@ -18,7 +18,7 @@ const PagesSectionContactUs = (props) => {
   //     message: message.value,
   //   };
 
-  //   let response = await fetch(`${process.env.PUBLIC_URL}/form-handler2.php`, {
+  //   let response = await fetch(`${process.env.REACT_APP_PUBLIC_URL}/form-handler2.php`, {
   //     method: "POST",
   //     headers: {
   //       "Content-Type": "application/json;charset=utf-8",

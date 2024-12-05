@@ -15,7 +15,7 @@ const HomePage3 = (props) => {
 	useEffect(() => {
 		const script = document.createElement('script');
 	
-		script.src = `${process.env.PUBLIC_URL}/externaljs/js/rev-script-2.js`;
+		script.src = `${process.env.REACT_APP_PUBLIC_URL}/externaljs/js/rev-script-2.js`;
 		script.async = true;
 	
 		document.body.appendChild(script);

@@ -8779,7 +8779,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     z-index: 999;
     height: 100vh !important;
     overflow-y: inherit !important;
-    left: -250px;
+    right: -250px;
     top: 0px;
     -moz-transition: all 0.5s linear;
     -ms-transition: all 0.5s linear;
@@ -8788,7 +8788,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     background-color: #fff;
   }
   .mobile-sider-drawer-menu.active .header-nav {
-    left: 15px;
+    right: 15px;
   }
   .is-fixed.mobile-sider-drawer-menu .header-nav .nav,
   .header-fixed.mobile-sider-drawer-menu .header-nav .nav {
